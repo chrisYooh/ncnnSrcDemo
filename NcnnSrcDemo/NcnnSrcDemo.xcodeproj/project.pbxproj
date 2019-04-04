@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F25678D022559EF7000985EE /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = F25678CA22559EF7000985EE /* mouth.png */; };
+		F25678D122559EF7000985EE /* result_info.json in Resources */ = {isa = PBXBuildFile; fileRef = F25678CC22559EF7000985EE /* result_info.json */; };
+		F25678D222559EF7000985EE /* TestSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25678CD22559EF7000985EE /* TestSupport.mm */; };
+		F25678D322559EF7000985EE /* squeezenet_v1.1.param in Resources */ = {isa = PBXBuildFile; fileRef = F25678CE22559EF7000985EE /* squeezenet_v1.1.param */; };
+		F25678D422559EF7000985EE /* squeezenet_v1.1.bin in Resources */ = {isa = PBXBuildFile; fileRef = F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */; };
 		F2CCA647224B4493008E4CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA646224B4493008E4CC9 /* AppDelegate.m */; };
 		F2CCA64A224B4493008E4CC9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA649224B4493008E4CC9 /* ViewController.mm */; };
 		F2CCA64D224B4493008E4CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA64B224B4493008E4CC9 /* Main.storyboard */; };
@@ -156,13 +161,15 @@
 		F2CCA7FB224B45B9008E4CC9 /* layer_shader_spv_data.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA76C224B45B9008E4CC9 /* layer_shader_spv_data.h.in */; };
 		F2CCA7FC224B45B9008E4CC9 /* opencv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA76D224B45B9008E4CC9 /* opencv.cpp */; };
 		F2CCA7FD224B45B9008E4CC9 /* paramdict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA76E224B45B9008E4CC9 /* paramdict.cpp */; };
-		F2CCA800224B45E8008E4CC9 /* squeezenet_v1.1.bin in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA7FF224B45E8008E4CC9 /* squeezenet_v1.1.bin */; };
-		F2CCA802224B45F0008E4CC9 /* squeezenet_v1.1.param in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA801224B45F0008E4CC9 /* squeezenet_v1.1.param */; };
-		F2CCA807224B47FD008E4CC9 /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA806224B47FD008E4CC9 /* mouth.png */; };
-		F2CCA80A224B4CF1008E4CC9 /* result_info.json in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA809224B4CF1008E4CC9 /* result_info.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F25678CA22559EF7000985EE /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
+		F25678CB22559EF7000985EE /* TestSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSupport.h; sourceTree = "<group>"; };
+		F25678CC22559EF7000985EE /* result_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_info.json; sourceTree = "<group>"; };
+		F25678CD22559EF7000985EE /* TestSupport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSupport.mm; sourceTree = "<group>"; };
+		F25678CE22559EF7000985EE /* squeezenet_v1.1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squeezenet_v1.1.param; sourceTree = "<group>"; };
+		F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = squeezenet_v1.1.bin; sourceTree = "<group>"; };
 		F2CCA642224B4493008E4CC9 /* NcnnSrcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcnnSrcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CCA645224B4493008E4CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2CCA646224B4493008E4CC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -444,10 +451,6 @@
 		F2CCA76C224B45B9008E4CC9 /* layer_shader_spv_data.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_shader_spv_data.h.in; sourceTree = "<group>"; };
 		F2CCA76D224B45B9008E4CC9 /* opencv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opencv.cpp; sourceTree = "<group>"; };
 		F2CCA76E224B45B9008E4CC9 /* paramdict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = paramdict.cpp; sourceTree = "<group>"; };
-		F2CCA7FF224B45E8008E4CC9 /* squeezenet_v1.1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = squeezenet_v1.1.bin; sourceTree = "<group>"; };
-		F2CCA801224B45F0008E4CC9 /* squeezenet_v1.1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squeezenet_v1.1.param; sourceTree = "<group>"; };
-		F2CCA806224B47FD008E4CC9 /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
-		F2CCA809224B4CF1008E4CC9 /* result_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_info.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -461,11 +464,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F25678C922559EF7000985EE /* testSupport */ = {
+			isa = PBXGroup;
+			children = (
+				F25678CA22559EF7000985EE /* mouth.png */,
+				F25678CB22559EF7000985EE /* TestSupport.h */,
+				F25678CC22559EF7000985EE /* result_info.json */,
+				F25678CD22559EF7000985EE /* TestSupport.mm */,
+				F25678CE22559EF7000985EE /* squeezenet_v1.1.param */,
+				F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */,
+			);
+			name = testSupport;
+			path = ../testSupport;
+			sourceTree = "<group>";
+		};
 		F2CCA639224B4493008E4CC9 = {
 			isa = PBXGroup;
 			children = (
-				F2CCA808224B4803008E4CC9 /* TestImage */,
-				F2CCA7FE224B45C6008E4CC9 /* TestModel */,
+				F25678C922559EF7000985EE /* testSupport */,
 				F2CCA65B224B45B9008E4CC9 /* src */,
 				F2CCA644224B4493008E4CC9 /* NcnnSrcDemo */,
 				F2CCA643224B4493008E4CC9 /* Products */,
@@ -806,24 +822,6 @@
 			path = arm;
 			sourceTree = "<group>";
 		};
-		F2CCA7FE224B45C6008E4CC9 /* TestModel */ = {
-			isa = PBXGroup;
-			children = (
-				F2CCA7FF224B45E8008E4CC9 /* squeezenet_v1.1.bin */,
-				F2CCA801224B45F0008E4CC9 /* squeezenet_v1.1.param */,
-				F2CCA809224B4CF1008E4CC9 /* result_info.json */,
-			);
-			path = TestModel;
-			sourceTree = "<group>";
-		};
-		F2CCA808224B4803008E4CC9 /* TestImage */ = {
-			isa = PBXGroup;
-			children = (
-				F2CCA806224B47FD008E4CC9 /* mouth.png */,
-			);
-			path = TestImage;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -883,7 +881,7 @@
 			files = (
 				F2CCA770224B45B9008E4CC9 /* layer_shader_registry.h.in in Resources */,
 				F2CCA7BB224B45B9008E4CC9 /* softmax_exp_sub_max.comp in Resources */,
-				F2CCA802224B45F0008E4CC9 /* squeezenet_v1.1.param in Resources */,
+				F25678D122559EF7000985EE /* result_info.json in Resources */,
 				F2CCA7BC224B45B9008E4CC9 /* pooling_global_pack4.comp in Resources */,
 				F2CCA7CF224B45B9008E4CC9 /* dropout_pack4.comp in Resources */,
 				F2CCA7C2224B45B9008E4CC9 /* convolutiondepthwise_pack4.comp in Resources */,
@@ -896,15 +894,16 @@
 				F2CCA772224B45B9008E4CC9 /* CMakeLists.txt in Resources */,
 				F2CCA7B3224B45B9008E4CC9 /* softmax_exp_sub_max_pack4.comp in Resources */,
 				F2CCA7D1224B45B9008E4CC9 /* scale.comp in Resources */,
-				F2CCA807224B47FD008E4CC9 /* mouth.png in Resources */,
 				F2CCA77A224B45B9008E4CC9 /* layer_registry.h.in in Resources */,
 				F2CCA7C5224B45B9008E4CC9 /* pooling.comp in Resources */,
 				F2CCA64F224B4494008E4CC9 /* Assets.xcassets in Resources */,
 				F2CCA7CD224B45B9008E4CC9 /* innerproduct.comp in Resources */,
 				F2CCA773224B45B9008E4CC9 /* platform.h.in in Resources */,
 				F2CCA7B4224B45B9008E4CC9 /* softmax_reduce_sum.comp in Resources */,
+				F25678D022559EF7000985EE /* mouth.png in Resources */,
 				F2CCA7F9224B45B9008E4CC9 /* layer_declaration.h.in in Resources */,
 				F2CCA7B5224B45B9008E4CC9 /* pooling_global.comp in Resources */,
+				F25678D322559EF7000985EE /* squeezenet_v1.1.param in Resources */,
 				F2CCA7D3224B45B9008E4CC9 /* dropout.comp in Resources */,
 				F2CCA7BD224B45B9008E4CC9 /* convolution.comp in Resources */,
 				F2CCA7C7224B45B9008E4CC9 /* padding.comp in Resources */,
@@ -913,7 +912,6 @@
 				F2CCA7D4224B45B9008E4CC9 /* softmax_reduce_max_pack4.comp in Resources */,
 				F2CCA7D2224B45B9008E4CC9 /* scale_pack4.comp in Resources */,
 				F2CCA771224B45B9008E4CC9 /* layer_type_enum.h.in in Resources */,
-				F2CCA800224B45E8008E4CC9 /* squeezenet_v1.1.bin in Resources */,
 				F2CCA7C1224B45B9008E4CC9 /* softmax_div_sum_pack4.comp in Resources */,
 				F2CCA7B6224B45B9008E4CC9 /* relu.comp in Resources */,
 				F2CCA7BF224B45B9008E4CC9 /* relu_pack4.comp in Resources */,
@@ -926,10 +924,10 @@
 				F2CCA7BA224B45B9008E4CC9 /* binaryop.comp in Resources */,
 				F2CCA7C8224B45B9008E4CC9 /* batchnorm.comp in Resources */,
 				F2CCA64D224B4493008E4CC9 /* Main.storyboard in Resources */,
-				F2CCA80A224B4CF1008E4CC9 /* result_info.json in Resources */,
 				F2CCA7C6224B45B9008E4CC9 /* convolution_pack4.comp in Resources */,
 				F2CCA7D0224B45B9008E4CC9 /* batchnorm_pack4.comp in Resources */,
 				F2CCA7C3224B45B9008E4CC9 /* innerproduct_pack4.comp in Resources */,
+				F25678D422559EF7000985EE /* squeezenet_v1.1.bin in Resources */,
 				F2CCA7BE224B45B9008E4CC9 /* unaryop.comp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -984,6 +982,7 @@
 				F2CCA7AC224B45B9008E4CC9 /* convolution_x86.cpp in Sources */,
 				F2CCA77E224B45B9008E4CC9 /* batchnorm.cpp in Sources */,
 				F2CCA781224B45B9008E4CC9 /* dequantize.cpp in Sources */,
+				F25678D222559EF7000985EE /* TestSupport.mm in Sources */,
 				F2CCA78F224B45B9008E4CC9 /* reorg.cpp in Sources */,
 				F2CCA7EC224B45B9008E4CC9 /* bias.cpp in Sources */,
 				F2CCA7F2224B45B9008E4CC9 /* roialign.cpp in Sources */,
@@ -1187,6 +1186,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KFM65GB3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NSD_SOURCE,
+					"DEBUG=1",
+				);
 				INFOPLIST_FILE = NcnnSrcDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1204,6 +1207,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67KFM65GB3;
+				GCC_PREPROCESSOR_DEFINITIONS = NSD_SOURCE;
 				INFOPLIST_FILE = NcnnSrcDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

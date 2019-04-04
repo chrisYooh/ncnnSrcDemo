@@ -1,0 +1,1540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2567633225592D7000985EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2567632225592D7000985EE /* AppDelegate.m */; };
+		F2567636225592D7000985EE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2567635225592D7000985EE /* ViewController.mm */; };
+		F2567639225592D7000985EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2567637225592D7000985EE /* Main.storyboard */; };
+		F256763B225592D8000985EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F256763A225592D8000985EE /* Assets.xcassets */; };
+		F256763E225592D8000985EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F256763C225592D8000985EE /* LaunchScreen.storyboard */; };
+		F2567641225592D8000985EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2567640225592D8000985EE /* main.m */; };
+		F25677A2225592F6000985EE /* mat_pixel_resize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567649225592F5000985EE /* mat_pixel_resize.cpp */; };
+		F25677A3225592F6000985EE /* layer_shader_registry.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256764A225592F5000985EE /* layer_shader_registry.h.in */; };
+		F25677A4225592F6000985EE /* layer_type_enum.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256764B225592F5000985EE /* layer_type_enum.h.in */; };
+		F25677A5225592F6000985EE /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = F256764C225592F5000985EE /* CMakeLists.txt */; };
+		F25677A6225592F6000985EE /* platform.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256764F225592F5000985EE /* platform.h.in */; };
+		F25677A7225592F6000985EE /* blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567651225592F5000985EE /* blob.cpp */; };
+		F25677A8225592F6000985EE /* layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567653225592F5000985EE /* layer.cpp */; };
+		F25677A9225592F6000985EE /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567654225592F5000985EE /* benchmark.cpp */; };
+		F25677AA225592F6000985EE /* command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567655225592F5000985EE /* command.cpp */; };
+		F25677AB225592F6000985EE /* pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567656225592F5000985EE /* pipeline.cpp */; };
+		F25677AC225592F6000985EE /* net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567657225592F5000985EE /* net.cpp */; };
+		F25677AD225592F6000985EE /* layer_registry.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256765A225592F5000985EE /* layer_registry.h.in */; };
+		F25677AE225592F6000985EE /* flatten.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256765C225592F5000985EE /* flatten.cpp */; };
+		F25677AF225592F6000985EE /* squeeze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256765E225592F5000985EE /* squeeze.cpp */; };
+		F25677B0225592F6000985EE /* dropout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256765F225592F5000985EE /* dropout.cpp */; };
+		F25677B1225592F6000985EE /* batchnorm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567664225592F5000985EE /* batchnorm.cpp */; };
+		F25677B2225592F6000985EE /* argmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567665225592F5000985EE /* argmax.cpp */; };
+		F25677B3225592F6000985EE /* shufflechannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567666225592F5000985EE /* shufflechannel.cpp */; };
+		F25677B4225592F6000985EE /* dequantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256766C225592F5000985EE /* dequantize.cpp */; };
+		F25677B5225592F6000985EE /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256766E225592F5000985EE /* log.cpp */; };
+		F25677B6225592F6000985EE /* detectionoutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256766F225592F5000985EE /* detectionoutput.cpp */; };
+		F25677B7225592F6000985EE /* memorydata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567670225592F5000985EE /* memorydata.cpp */; };
+		F25677B8225592F6000985EE /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567672225592F5000985EE /* input.cpp */; };
+		F25677B9225592F6000985EE /* reshape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567673225592F5000985EE /* reshape.cpp */; };
+		F25677BA225592F6000985EE /* sigmoid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567675225592F5000985EE /* sigmoid.cpp */; };
+		F25677BB225592F6000985EE /* deconvolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567678225592F5000985EE /* deconvolution.cpp */; };
+		F25677BC225592F6000985EE /* interp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567679225592F5000985EE /* interp.cpp */; };
+		F25677BD225592F6000985EE /* deconvolutiondepthwise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256767A225592F5000985EE /* deconvolutiondepthwise.cpp */; };
+		F25677BE225592F6000985EE /* tanh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256767E225592F5000985EE /* tanh.cpp */; };
+		F25677BF225592F6000985EE /* expanddims.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256767F225592F5000985EE /* expanddims.cpp */; };
+		F25677C0225592F6000985EE /* split.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567681225592F5000985EE /* split.cpp */; };
+		F25677C1225592F6000985EE /* matmul.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567682225592F5000985EE /* matmul.cpp */; };
+		F25677C2225592F6000985EE /* reorg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567683225592F5000985EE /* reorg.cpp */; };
+		F25677C3225592F6000985EE /* roipooling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567684225592F5000985EE /* roipooling.cpp */; };
+		F25677C4225592F6000985EE /* reduction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567686225592F5000985EE /* reduction.cpp */; };
+		F25677C5225592F6000985EE /* permute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567687225592F5000985EE /* permute.cpp */; };
+		F25677C6225592F6000985EE /* bnll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567689225592F5000985EE /* bnll.cpp */; };
+		F25677C7225592F6000985EE /* elu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256768A225592F5000985EE /* elu.cpp */; };
+		F25677C8225592F6000985EE /* exp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256768B225592F5000985EE /* exp.cpp */; };
+		F25677C9225592F6000985EE /* relu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256768D225592F5000985EE /* relu.cpp */; };
+		F25677CA225592F6000985EE /* embed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256768E225592F5000985EE /* embed.cpp */; };
+		F25677CB225592F6000985EE /* slice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567692225592F5000985EE /* slice.cpp */; };
+		F25677CC225592F6000985EE /* lrn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567694225592F5000985EE /* lrn.cpp */; };
+		F25677CD225592F6000985EE /* instancenorm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567696225592F5000985EE /* instancenorm.cpp */; };
+		F25677CE225592F6000985EE /* proposal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567698225592F5000985EE /* proposal.cpp */; };
+		F25677CF225592F6000985EE /* eltwise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567699225592F5000985EE /* eltwise.cpp */; };
+		F25677D0225592F6000985EE /* prelu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256769B225592F5000985EE /* prelu.cpp */; };
+		F25677D1225592F6000985EE /* pooling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256769C225592F5000985EE /* pooling.cpp */; };
+		F25677D2225592F6000985EE /* spp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256769F225592F5000985EE /* spp.cpp */; };
+		F25677D3225592F6000985EE /* lstm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A0225592F5000985EE /* lstm.cpp */; };
+		F25677D4225592F6000985EE /* normalize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A2225592F5000985EE /* normalize.cpp */; };
+		F25677D5225592F6000985EE /* concat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A3225592F5000985EE /* concat.cpp */; };
+		F25677D6225592F6000985EE /* packing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A6225592F5000985EE /* packing.cpp */; };
+		F25677D7225592F6000985EE /* convolutiondepthwise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A7225592F5000985EE /* convolutiondepthwise.cpp */; };
+		F25677D8225592F6000985EE /* rnn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676A8225592F5000985EE /* rnn.cpp */; };
+		F25677D9225592F6000985EE /* crop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676AA225592F5000985EE /* crop.cpp */; };
+		F25677DA225592F6000985EE /* psroipooling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676AB225592F5000985EE /* psroipooling.cpp */; };
+		F25677DB225592F6000985EE /* power.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676AC225592F5000985EE /* power.cpp */; };
+		F25677DC225592F6000985EE /* mvn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676AD225592F5000985EE /* mvn.cpp */; };
+		F25677DD225592F6000985EE /* priorbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676B0225592F5000985EE /* priorbox.cpp */; };
+		F25677DE225592F6000985EE /* convolutiondepthwise_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676BD225592F5000985EE /* convolutiondepthwise_x86.cpp */; };
+		F25677DF225592F6000985EE /* convolution_x86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676BF225592F5000985EE /* convolution_x86.cpp */; };
+		F25677E0225592F6000985EE /* innerproduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676C8225592F5000985EE /* innerproduct.cpp */; };
+		F25677E1225592F6000985EE /* softmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676CC225592F5000985EE /* softmax.cpp */; };
+		F25677E2225592F6000985EE /* clip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676CF225592F5000985EE /* clip.cpp */; };
+		F25677E3225592F6000985EE /* padding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676D0225592F5000985EE /* padding.cpp */; };
+		F25677E4225592F6000985EE /* requantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676D1225592F5000985EE /* requantize.cpp */; };
+		F25677E5225592F6000985EE /* threshold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676D4225592F5000985EE /* threshold.cpp */; };
+		F25677E6225592F6000985EE /* quantize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25676D5225592F5000985EE /* quantize.cpp */; };
+		F25677E7225592F6000985EE /* softmax_exp_sub_max_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676D7225592F5000985EE /* softmax_exp_sub_max_pack4.comp */; };
+		F25677E8225592F6000985EE /* lrn_square_pad_across_channel_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676D8225592F5000985EE /* lrn_square_pad_across_channel_pack4.comp */; };
+		F25677E9225592F6000985EE /* cast_fp16_to_fp32_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676D9225592F5000985EE /* cast_fp16_to_fp32_pack4.comp */; };
+		F25677EA225592F6000985EE /* interp.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DA225592F5000985EE /* interp.comp */; };
+		F25677EB225592F6000985EE /* reshape_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DB225592F5000985EE /* reshape_pack1to4.comp */; };
+		F25677EC225592F6000985EE /* absval_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DC225592F5000985EE /* absval_pack4.comp */; };
+		F25677ED225592F6000985EE /* deconvolution_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DD225592F5000985EE /* deconvolution_pack1to4.comp */; };
+		F25677EE225592F6000985EE /* deconvolution.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DE225592F5000985EE /* deconvolution.comp */; };
+		F25677EF225592F6000985EE /* softmax_reduce_sum.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676DF225592F5000985EE /* softmax_reduce_sum.comp */; };
+		F25677F0225592F6000985EE /* lrn_norm.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E0225592F5000985EE /* lrn_norm.comp */; };
+		F25677F1225592F6000985EE /* pooling_global.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E1225592F5000985EE /* pooling_global.comp */; };
+		F25677F2225592F6000985EE /* innerproduct_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E2225592F5000985EE /* innerproduct_pack4to1.comp */; };
+		F25677F3225592F6000985EE /* priorbox.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E3225592F5000985EE /* priorbox.comp */; };
+		F25677F4225592F6000985EE /* shufflechannel_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E4225592F5000985EE /* shufflechannel_pack4.comp */; };
+		F25677F5225592F6000985EE /* deconvolutiondepthwise_group.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E5225592F5000985EE /* deconvolutiondepthwise_group.comp */; };
+		F25677F6225592F6000985EE /* lrn_square_pad.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E6225592F5000985EE /* lrn_square_pad.comp */; };
+		F25677F7225592F6000985EE /* convolutiondepthwise_group_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E7225592F5000985EE /* convolutiondepthwise_group_pack4.comp */; };
+		F25677F8225592F6000985EE /* relu.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E8225592F5000985EE /* relu.comp */; };
+		F25677F9225592F6000985EE /* pooling_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676E9225592F5000985EE /* pooling_pack4.comp */; };
+		F25677FA225592F6000985EE /* permute_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676EA225592F5000985EE /* permute_pack4to1.comp */; };
+		F25677FB225592F6000985EE /* unaryop_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676EB225592F5000985EE /* unaryop_pack4.comp */; };
+		F25677FC225592F6000985EE /* deconvolutiondepthwise_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676EC225592F5000985EE /* deconvolutiondepthwise_pack4.comp */; };
+		F25677FD225592F6000985EE /* convolutiondepthwise.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676ED225592F5000985EE /* convolutiondepthwise.comp */; };
+		F25677FE225592F6000985EE /* cast_fp32_to_fp16.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676EE225592F5000985EE /* cast_fp32_to_fp16.comp */; };
+		F25677FF225592F6000985EE /* binaryop.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676EF225592F5000985EE /* binaryop.comp */; };
+		F2567800225592F6000985EE /* softmax_exp_sub_max.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F0225592F5000985EE /* softmax_exp_sub_max.comp */; };
+		F2567801225592F6000985EE /* lrn_square_pad_within_channel_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F1225592F5000985EE /* lrn_square_pad_within_channel_pack4.comp */; };
+		F2567802225592F6000985EE /* pooling_global_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F2225592F5000985EE /* pooling_global_pack4.comp */; };
+		F2567803225592F6000985EE /* permute.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F3225592F5000985EE /* permute.comp */; };
+		F2567804225592F6000985EE /* innerproduct_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F4225592F5000985EE /* innerproduct_pack1to4.comp */; };
+		F2567805225592F6000985EE /* flatten.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F5225592F5000985EE /* flatten.comp */; };
+		F2567806225592F6000985EE /* convolution.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F6225592F5000985EE /* convolution.comp */; };
+		F2567807225592F6000985EE /* unaryop.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F7225592F5000985EE /* unaryop.comp */; };
+		F2567808225592F6000985EE /* prelu.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F8225592F5000985EE /* prelu.comp */; };
+		F2567809225592F6000985EE /* reorg_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676F9225592F5000985EE /* reorg_pack4.comp */; };
+		F256780A225592F6000985EE /* deconvolution_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FA225592F5000985EE /* deconvolution_pack4to1.comp */; };
+		F256780B225592F6000985EE /* reshape_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FB225592F5000985EE /* reshape_pack4to1.comp */; };
+		F256780C225592F6000985EE /* tanh_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FC225592F5000985EE /* tanh_pack4.comp */; };
+		F256780D225592F6000985EE /* relu_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FD225592F5000985EE /* relu_pack4.comp */; };
+		F256780E225592F6000985EE /* binaryop_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FE225592F5000985EE /* binaryop_pack4.comp */; };
+		F256780F225592F6000985EE /* reorg_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F25676FF225592F5000985EE /* reorg_pack1to4.comp */; };
+		F2567810225592F6000985EE /* concat_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567700225592F5000985EE /* concat_pack4to1.comp */; };
+		F2567811225592F6000985EE /* softmax_div_sum_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567701225592F5000985EE /* softmax_div_sum_pack4.comp */; };
+		F2567812225592F6000985EE /* interp_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567702225592F5000985EE /* interp_pack4.comp */; };
+		F2567813225592F6000985EE /* convolutiondepthwise_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567703225592F5000985EE /* convolutiondepthwise_pack4.comp */; };
+		F2567814225592F6000985EE /* sigmoid_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567704225592F5000985EE /* sigmoid_pack4.comp */; };
+		F2567815225592F6000985EE /* innerproduct_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567705225592F5000985EE /* innerproduct_pack4.comp */; };
+		F2567816225592F6000985EE /* tanh.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567706225592F5000985EE /* tanh.comp */; };
+		F2567817225592F6000985EE /* pooling.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567707225592F5000985EE /* pooling.comp */; };
+		F2567818225592F6000985EE /* convolutiondepthwise_group.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567708225592F5000985EE /* convolutiondepthwise_group.comp */; };
+		F2567819225592F6000985EE /* convolution_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567709225592F5000985EE /* convolution_pack4.comp */; };
+		F256781A225592F6000985EE /* deconvolutiondepthwise_group_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770A225592F5000985EE /* deconvolutiondepthwise_group_pack4to1.comp */; };
+		F256781B225592F6000985EE /* convolution_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770B225592F5000985EE /* convolution_pack4to1.comp */; };
+		F256781C225592F6000985EE /* convolutiondepthwise_group_pack4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770C225592F5000985EE /* convolutiondepthwise_group_pack4to1.comp */; };
+		F256781D225592F6000985EE /* priorbox_mxnet.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770D225592F5000985EE /* priorbox_mxnet.comp */; };
+		F256781E225592F6000985EE /* padding.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770E225592F5000985EE /* padding.comp */; };
+		F256781F225592F6000985EE /* deconvolutiondepthwise_group_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256770F225592F5000985EE /* deconvolutiondepthwise_group_pack4.comp */; };
+		F2567820225592F6000985EE /* prelu_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567710225592F5000985EE /* prelu_pack4.comp */; };
+		F2567821225592F6000985EE /* lrn_norm_within_channel_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567711225592F5000985EE /* lrn_norm_within_channel_pack4.comp */; };
+		F2567822225592F6000985EE /* deconvolution_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567712225592F5000985EE /* deconvolution_pack4.comp */; };
+		F2567823225592F6000985EE /* crop.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567713225592F5000985EE /* crop.comp */; };
+		F2567824225592F6000985EE /* batchnorm.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567714225592F5000985EE /* batchnorm.comp */; };
+		F2567825225592F6000985EE /* cast_fp16_to_fp32.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567715225592F5000985EE /* cast_fp16_to_fp32.comp */; };
+		F2567826225592F6000985EE /* absval.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567716225592F5000985EE /* absval.comp */; };
+		F2567827225592F6000985EE /* concat_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567717225592F5000985EE /* concat_pack4.comp */; };
+		F2567828225592F6000985EE /* softmax_div_sum.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567718225592F5000985EE /* softmax_div_sum.comp */; };
+		F2567829225592F6000985EE /* crop_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567719225592F5000985EE /* crop_pack4.comp */; };
+		F256782A225592F6000985EE /* packing_4to1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771A225592F5000985EE /* packing_4to1.comp */; };
+		F256782B225592F6000985EE /* padding_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771B225592F5000985EE /* padding_pack4.comp */; };
+		F256782C225592F6000985EE /* shufflechannel.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771C225592F5000985EE /* shufflechannel.comp */; };
+		F256782D225592F6000985EE /* flatten_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771D225592F5000985EE /* flatten_pack4.comp */; };
+		F256782E225592F6000985EE /* reshape.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771E225592F5000985EE /* reshape.comp */; };
+		F256782F225592F6000985EE /* convolution_1x1s1d1.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256771F225592F5000985EE /* convolution_1x1s1d1.comp */; };
+		F2567830225592F6000985EE /* concat.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567720225592F5000985EE /* concat.comp */; };
+		F2567831225592F6000985EE /* clip_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567721225592F5000985EE /* clip_pack4.comp */; };
+		F2567832225592F6000985EE /* reshape_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567722225592F5000985EE /* reshape_pack4.comp */; };
+		F2567833225592F6000985EE /* eltwise_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567723225592F5000985EE /* eltwise_pack4.comp */; };
+		F2567834225592F6000985EE /* innerproduct.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567724225592F5000985EE /* innerproduct.comp */; };
+		F2567835225592F6000985EE /* reorg.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567725225592F5000985EE /* reorg.comp */; };
+		F2567836225592F6000985EE /* clip.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567726225592F5000985EE /* clip.comp */; };
+		F2567837225592F6000985EE /* convolutiondepthwise_group_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567727225592F5000985EE /* convolutiondepthwise_group_pack1to4.comp */; };
+		F2567838225592F6000985EE /* lrn_norm_across_channel_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567728225592F5000985EE /* lrn_norm_across_channel_pack4.comp */; };
+		F2567839225592F6000985EE /* softmax_reduce_sum_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567729225592F5000985EE /* softmax_reduce_sum_pack4.comp */; };
+		F256783A225592F6000985EE /* deconvolutiondepthwise_group_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772A225592F5000985EE /* deconvolutiondepthwise_group_pack1to4.comp */; };
+		F256783B225592F6000985EE /* convolution_pack1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772B225592F5000985EE /* convolution_pack1to4.comp */; };
+		F256783C225592F6000985EE /* dropout_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772C225592F5000985EE /* dropout_pack4.comp */; };
+		F256783D225592F6000985EE /* batchnorm_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772D225592F5000985EE /* batchnorm_pack4.comp */; };
+		F256783E225592F6000985EE /* cast_fp32_to_fp16_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772E225592F5000985EE /* cast_fp32_to_fp16_pack4.comp */; };
+		F256783F225592F6000985EE /* deconvolutiondepthwise.comp in Resources */ = {isa = PBXBuildFile; fileRef = F256772F225592F5000985EE /* deconvolutiondepthwise.comp */; };
+		F2567840225592F6000985EE /* packing_1to4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567730225592F5000985EE /* packing_1to4.comp */; };
+		F2567841225592F6000985EE /* scale.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567731225592F5000985EE /* scale.comp */; };
+		F2567842225592F6000985EE /* scale_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567732225592F5000985EE /* scale_pack4.comp */; };
+		F2567843225592F6000985EE /* dropout.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567733225592F5000985EE /* dropout.comp */; };
+		F2567844225592F6000985EE /* sigmoid.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567734225592F5000985EE /* sigmoid.comp */; };
+		F2567845225592F6000985EE /* softmax_reduce_max_pack4.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567735225592F5000985EE /* softmax_reduce_max_pack4.comp */; };
+		F2567846225592F6000985EE /* softmax_reduce_max.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567736225592F5000985EE /* softmax_reduce_max.comp */; };
+		F2567847225592F6000985EE /* eltwise.comp in Resources */ = {isa = PBXBuildFile; fileRef = F2567737225592F5000985EE /* eltwise.comp */; };
+		F2567848225592F6000985EE /* yolov3detectionoutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567738225592F5000985EE /* yolov3detectionoutput.cpp */; };
+		F2567849225592F6000985EE /* tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567739225592F5000985EE /* tile.cpp */; };
+		F256784A225592F6000985EE /* cast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256773D225592F5000985EE /* cast.cpp */; };
+		F256784B225592F6000985EE /* relu_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256773F225592F5000985EE /* relu_arm.cpp */; };
+		F256784C225592F6000985EE /* deconvolution_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567740225592F5000985EE /* deconvolution_arm.cpp */; };
+		F256784D225592F6000985EE /* convolution_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567742225592F5000985EE /* convolution_arm.cpp */; };
+		F256784E225592F6000985EE /* dequantize_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567743225592F5000985EE /* dequantize_arm.cpp */; };
+		F256784F225592F6000985EE /* batchnorm_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567747225592F5000985EE /* batchnorm_arm.cpp */; };
+		F2567850225592F6000985EE /* convolutiondepthwise_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567748225592F5000985EE /* convolutiondepthwise_arm.cpp */; };
+		F2567851225592F6000985EE /* softmax_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256774F225592F5000985EE /* softmax_arm.cpp */; };
+		F2567852225592F6000985EE /* quantize_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567753225592F5000985EE /* quantize_arm.cpp */; };
+		F2567853225592F6000985EE /* interp_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567756225592F5000985EE /* interp_arm.cpp */; };
+		F2567854225592F6000985EE /* eltwise_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567757225592F5000985EE /* eltwise_arm.cpp */; };
+		F2567855225592F6000985EE /* lrn_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567758225592F5000985EE /* lrn_arm.cpp */; };
+		F2567856225592F6000985EE /* bias_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567759225592F5000985EE /* bias_arm.cpp */; };
+		F2567857225592F6000985EE /* requantize_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256775B225592F5000985EE /* requantize_arm.cpp */; };
+		F2567858225592F6000985EE /* innerproduct_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256775C225592F5000985EE /* innerproduct_arm.cpp */; };
+		F2567859225592F6000985EE /* prelu_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567766225592F6000985EE /* prelu_arm.cpp */; };
+		F256785A225592F6000985EE /* clip_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256776B225592F6000985EE /* clip_arm.cpp */; };
+		F256785B225592F6000985EE /* scale_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567770225592F6000985EE /* scale_arm.cpp */; };
+		F256785C225592F6000985EE /* absval_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567771225592F6000985EE /* absval_arm.cpp */; };
+		F256785D225592F6000985EE /* sigmoid_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567772225592F6000985EE /* sigmoid_arm.cpp */; };
+		F256785E225592F6000985EE /* pooling_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567774225592F6000985EE /* pooling_arm.cpp */; };
+		F256785F225592F6000985EE /* deconvolutiondepthwise_arm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567775225592F6000985EE /* deconvolutiondepthwise_arm.cpp */; };
+		F2567860225592F6000985EE /* bias.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256777E225592F6000985EE /* bias.cpp */; };
+		F2567861225592F6000985EE /* scale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256777F225592F6000985EE /* scale.cpp */; };
+		F2567862225592F6000985EE /* binaryop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567780225592F6000985EE /* binaryop.cpp */; };
+		F2567863225592F6000985EE /* unaryop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567783225592F6000985EE /* unaryop.cpp */; };
+		F2567864225592F6000985EE /* absval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567788225592F6000985EE /* absval.cpp */; };
+		F2567865225592F6000985EE /* convolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567789225592F6000985EE /* convolution.cpp */; };
+		F2567866225592F6000985EE /* roialign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256778A225592F6000985EE /* roialign.cpp */; };
+		F2567867225592F6000985EE /* yolodetectionoutput.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256778F225592F6000985EE /* yolodetectionoutput.cpp */; };
+		F2567868225592F6000985EE /* allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567793225592F6000985EE /* allocator.cpp */; };
+		F2567869225592F6000985EE /* mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567795225592F6000985EE /* mat.cpp */; };
+		F256786A225592F6000985EE /* modelbin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567796225592F6000985EE /* modelbin.cpp */; };
+		F256786B225592F6000985EE /* mat_pixel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2567798225592F6000985EE /* mat_pixel.cpp */; };
+		F256786C225592F6000985EE /* cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256779C225592F6000985EE /* cpu.cpp */; };
+		F256786D225592F6000985EE /* layer_declaration.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256779D225592F6000985EE /* layer_declaration.h.in */; };
+		F256786E225592F6000985EE /* gpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F256779E225592F6000985EE /* gpu.cpp */; };
+		F256786F225592F6000985EE /* layer_shader_spv_data.h.in in Resources */ = {isa = PBXBuildFile; fileRef = F256779F225592F6000985EE /* layer_shader_spv_data.h.in */; };
+		F2567870225592F6000985EE /* opencv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25677A0225592F6000985EE /* opencv.cpp */; };
+		F2567871225592F6000985EE /* paramdict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25677A1225592F6000985EE /* paramdict.cpp */; };
+		F2567889225594E4000985EE /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = F2567885225594E3000985EE /* mouth.png */; };
+		F256788A225594E4000985EE /* result_info.json in Resources */ = {isa = PBXBuildFile; fileRef = F2567886225594E3000985EE /* result_info.json */; };
+		F256788B225594E4000985EE /* squeezenet_v1.1.param in Resources */ = {isa = PBXBuildFile; fileRef = F2567887225594E3000985EE /* squeezenet_v1.1.param */; };
+		F256788C225594E4000985EE /* squeezenet_v1.1.bin in Resources */ = {isa = PBXBuildFile; fileRef = F2567888225594E3000985EE /* squeezenet_v1.1.bin */; };
+		F256788F22559624000985EE /* MoltenVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F256788E22559623000985EE /* MoltenVK.framework */; };
+		F2567895225598AA000985EE /* TestSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2567893225598AA000985EE /* TestSupport.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F256762E225592D7000985EE /* NcnnSrcDemo_MoltenVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcnnSrcDemo_MoltenVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2567631225592D7000985EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2567632225592D7000985EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2567634225592D7000985EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2567635225592D7000985EE /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F2567638225592D7000985EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F256763A225592D8000985EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F256763D225592D8000985EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F256763F225592D8000985EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2567640225592D8000985EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2567648225592F5000985EE /* modelbin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modelbin.h; sourceTree = "<group>"; };
+		F2567649225592F5000985EE /* mat_pixel_resize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mat_pixel_resize.cpp; sourceTree = "<group>"; };
+		F256764A225592F5000985EE /* layer_shader_registry.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_shader_registry.h.in; sourceTree = "<group>"; };
+		F256764B225592F5000985EE /* layer_type_enum.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_type_enum.h.in; sourceTree = "<group>"; };
+		F256764C225592F5000985EE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F256764D225592F5000985EE /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		F256764E225592F5000985EE /* mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mat.h; sourceTree = "<group>"; };
+		F256764F225592F5000985EE /* platform.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = platform.h.in; sourceTree = "<group>"; };
+		F2567650225592F5000985EE /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blob.h; sourceTree = "<group>"; };
+		F2567651225592F5000985EE /* blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blob.cpp; sourceTree = "<group>"; };
+		F2567652225592F5000985EE /* layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layer.h; sourceTree = "<group>"; };
+		F2567653225592F5000985EE /* layer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = layer.cpp; sourceTree = "<group>"; };
+		F2567654225592F5000985EE /* benchmark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
+		F2567655225592F5000985EE /* command.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = command.cpp; sourceTree = "<group>"; };
+		F2567656225592F5000985EE /* pipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pipeline.cpp; sourceTree = "<group>"; };
+		F2567657225592F5000985EE /* net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net.cpp; sourceTree = "<group>"; };
+		F2567658225592F5000985EE /* paramdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paramdict.h; sourceTree = "<group>"; };
+		F2567659225592F5000985EE /* gpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpu.h; sourceTree = "<group>"; };
+		F256765A225592F5000985EE /* layer_registry.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_registry.h.in; sourceTree = "<group>"; };
+		F256765C225592F5000985EE /* flatten.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flatten.cpp; sourceTree = "<group>"; };
+		F256765D225592F5000985EE /* softmax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = softmax.h; sourceTree = "<group>"; };
+		F256765E225592F5000985EE /* squeeze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = squeeze.cpp; sourceTree = "<group>"; };
+		F256765F225592F5000985EE /* dropout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dropout.cpp; sourceTree = "<group>"; };
+		F2567660225592F5000985EE /* quantize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quantize.h; sourceTree = "<group>"; };
+		F2567661225592F5000985EE /* dequantize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dequantize.h; sourceTree = "<group>"; };
+		F2567662225592F5000985EE /* matmul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matmul.h; sourceTree = "<group>"; };
+		F2567663225592F5000985EE /* permute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = permute.h; sourceTree = "<group>"; };
+		F2567664225592F5000985EE /* batchnorm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = batchnorm.cpp; sourceTree = "<group>"; };
+		F2567665225592F5000985EE /* argmax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = argmax.cpp; sourceTree = "<group>"; };
+		F2567666225592F5000985EE /* shufflechannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shufflechannel.cpp; sourceTree = "<group>"; };
+		F2567667225592F5000985EE /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		F2567668225592F5000985EE /* power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = power.h; sourceTree = "<group>"; };
+		F2567669225592F5000985EE /* flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flatten.h; sourceTree = "<group>"; };
+		F256766A225592F5000985EE /* embed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = embed.h; sourceTree = "<group>"; };
+		F256766B225592F5000985EE /* roialign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roialign.h; sourceTree = "<group>"; };
+		F256766C225592F5000985EE /* dequantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dequantize.cpp; sourceTree = "<group>"; };
+		F256766D225592F5000985EE /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		F256766E225592F5000985EE /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		F256766F225592F5000985EE /* detectionoutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = detectionoutput.cpp; sourceTree = "<group>"; };
+		F2567670225592F5000985EE /* memorydata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memorydata.cpp; sourceTree = "<group>"; };
+		F2567671225592F5000985EE /* eltwise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eltwise.h; sourceTree = "<group>"; };
+		F2567672225592F5000985EE /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		F2567673225592F5000985EE /* reshape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reshape.cpp; sourceTree = "<group>"; };
+		F2567674225592F5000985EE /* rnn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rnn.h; sourceTree = "<group>"; };
+		F2567675225592F5000985EE /* sigmoid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sigmoid.cpp; sourceTree = "<group>"; };
+		F2567676225592F5000985EE /* shufflechannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shufflechannel.h; sourceTree = "<group>"; };
+		F2567677225592F5000985EE /* requantize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requantize.h; sourceTree = "<group>"; };
+		F2567678225592F5000985EE /* deconvolution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deconvolution.cpp; sourceTree = "<group>"; };
+		F2567679225592F5000985EE /* interp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interp.cpp; sourceTree = "<group>"; };
+		F256767A225592F5000985EE /* deconvolutiondepthwise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deconvolutiondepthwise.cpp; sourceTree = "<group>"; };
+		F256767B225592F5000985EE /* tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tile.h; sourceTree = "<group>"; };
+		F256767C225592F5000985EE /* psroipooling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = psroipooling.h; sourceTree = "<group>"; };
+		F256767D225592F5000985EE /* batchnorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = batchnorm.h; sourceTree = "<group>"; };
+		F256767E225592F5000985EE /* tanh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tanh.cpp; sourceTree = "<group>"; };
+		F256767F225592F5000985EE /* expanddims.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = expanddims.cpp; sourceTree = "<group>"; };
+		F2567680225592F5000985EE /* relu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relu.h; sourceTree = "<group>"; };
+		F2567681225592F5000985EE /* split.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = split.cpp; sourceTree = "<group>"; };
+		F2567682225592F5000985EE /* matmul.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = matmul.cpp; sourceTree = "<group>"; };
+		F2567683225592F5000985EE /* reorg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reorg.cpp; sourceTree = "<group>"; };
+		F2567684225592F5000985EE /* roipooling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = roipooling.cpp; sourceTree = "<group>"; };
+		F2567685225592F5000985EE /* convolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution.h; sourceTree = "<group>"; };
+		F2567686225592F5000985EE /* reduction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reduction.cpp; sourceTree = "<group>"; };
+		F2567687225592F5000985EE /* permute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = permute.cpp; sourceTree = "<group>"; };
+		F2567688225592F5000985EE /* proposal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proposal.h; sourceTree = "<group>"; };
+		F2567689225592F5000985EE /* bnll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bnll.cpp; sourceTree = "<group>"; };
+		F256768A225592F5000985EE /* elu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = elu.cpp; sourceTree = "<group>"; };
+		F256768B225592F5000985EE /* exp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exp.cpp; sourceTree = "<group>"; };
+		F256768C225592F5000985EE /* instancenorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instancenorm.h; sourceTree = "<group>"; };
+		F256768D225592F5000985EE /* relu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = relu.cpp; sourceTree = "<group>"; };
+		F256768E225592F5000985EE /* embed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = embed.cpp; sourceTree = "<group>"; };
+		F256768F225592F5000985EE /* bias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bias.h; sourceTree = "<group>"; };
+		F2567690225592F5000985EE /* prelu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prelu.h; sourceTree = "<group>"; };
+		F2567691225592F5000985EE /* absval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = absval.h; sourceTree = "<group>"; };
+		F2567692225592F5000985EE /* slice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slice.cpp; sourceTree = "<group>"; };
+		F2567693225592F5000985EE /* slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		F2567694225592F5000985EE /* lrn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lrn.cpp; sourceTree = "<group>"; };
+		F2567695225592F5000985EE /* normalize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalize.h; sourceTree = "<group>"; };
+		F2567696225592F5000985EE /* instancenorm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = instancenorm.cpp; sourceTree = "<group>"; };
+		F2567697225592F5000985EE /* spp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spp.h; sourceTree = "<group>"; };
+		F2567698225592F5000985EE /* proposal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = proposal.cpp; sourceTree = "<group>"; };
+		F2567699225592F5000985EE /* eltwise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eltwise.cpp; sourceTree = "<group>"; };
+		F256769A225592F5000985EE /* packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packing.h; sourceTree = "<group>"; };
+		F256769B225592F5000985EE /* prelu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prelu.cpp; sourceTree = "<group>"; };
+		F256769C225592F5000985EE /* pooling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pooling.cpp; sourceTree = "<group>"; };
+		F256769D225592F5000985EE /* priorbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = priorbox.h; sourceTree = "<group>"; };
+		F256769E225592F5000985EE /* lstm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lstm.h; sourceTree = "<group>"; };
+		F256769F225592F5000985EE /* spp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spp.cpp; sourceTree = "<group>"; };
+		F25676A0225592F5000985EE /* lstm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lstm.cpp; sourceTree = "<group>"; };
+		F25676A1225592F5000985EE /* threshold.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threshold.h; sourceTree = "<group>"; };
+		F25676A2225592F5000985EE /* normalize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normalize.cpp; sourceTree = "<group>"; };
+		F25676A3225592F5000985EE /* concat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = concat.cpp; sourceTree = "<group>"; };
+		F25676A4225592F5000985EE /* concat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = concat.h; sourceTree = "<group>"; };
+		F25676A5225592F5000985EE /* tanh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tanh.h; sourceTree = "<group>"; };
+		F25676A6225592F5000985EE /* packing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = packing.cpp; sourceTree = "<group>"; };
+		F25676A7225592F5000985EE /* convolutiondepthwise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolutiondepthwise.cpp; sourceTree = "<group>"; };
+		F25676A8225592F5000985EE /* rnn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rnn.cpp; sourceTree = "<group>"; };
+		F25676A9225592F5000985EE /* convolutiondepthwise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise.h; sourceTree = "<group>"; };
+		F25676AA225592F5000985EE /* crop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crop.cpp; sourceTree = "<group>"; };
+		F25676AB225592F5000985EE /* psroipooling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = psroipooling.cpp; sourceTree = "<group>"; };
+		F25676AC225592F5000985EE /* power.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = power.cpp; sourceTree = "<group>"; };
+		F25676AD225592F5000985EE /* mvn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mvn.cpp; sourceTree = "<group>"; };
+		F25676AE225592F5000985EE /* dropout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dropout.h; sourceTree = "<group>"; };
+		F25676AF225592F5000985EE /* elu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = elu.h; sourceTree = "<group>"; };
+		F25676B0225592F5000985EE /* priorbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = priorbox.cpp; sourceTree = "<group>"; };
+		F25676B1225592F5000985EE /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		F25676B2225592F5000985EE /* clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clip.h; sourceTree = "<group>"; };
+		F25676B3225592F5000985EE /* reshape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reshape.h; sourceTree = "<group>"; };
+		F25676B4225592F5000985EE /* crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crop.h; sourceTree = "<group>"; };
+		F25676B5225592F5000985EE /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		F25676B7225592F5000985EE /* convolution_7x7_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_7x7_int8.h; sourceTree = "<group>"; };
+		F25676B8225592F5000985EE /* convolution_1x1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_1x1.h; sourceTree = "<group>"; };
+		F25676B9225592F5000985EE /* convolutiondepthwise_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_x86.h; sourceTree = "<group>"; };
+		F25676BA225592F5000985EE /* convolution_1x1_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_1x1_int8.h; sourceTree = "<group>"; };
+		F25676BB225592F5000985EE /* convolution_5x5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_5x5.h; sourceTree = "<group>"; };
+		F25676BC225592F5000985EE /* convolutiondepthwise_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_3x3.h; sourceTree = "<group>"; };
+		F25676BD225592F5000985EE /* convolutiondepthwise_x86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolutiondepthwise_x86.cpp; sourceTree = "<group>"; };
+		F25676BE225592F5000985EE /* convolutiondepthwise_3x3_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_3x3_int8.h; sourceTree = "<group>"; };
+		F25676BF225592F5000985EE /* convolution_x86.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolution_x86.cpp; sourceTree = "<group>"; };
+		F25676C0225592F5000985EE /* convolution_5x5_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_5x5_int8.h; sourceTree = "<group>"; };
+		F25676C1225592F5000985EE /* convolution_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_3x3.h; sourceTree = "<group>"; };
+		F25676C2225592F5000985EE /* sse_mathfun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sse_mathfun.h; sourceTree = "<group>"; };
+		F25676C3225592F5000985EE /* convolution_3x3_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_3x3_int8.h; sourceTree = "<group>"; };
+		F25676C4225592F5000985EE /* convolution_sgemm_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_sgemm_int8.h; sourceTree = "<group>"; };
+		F25676C5225592F5000985EE /* convolution_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_x86.h; sourceTree = "<group>"; };
+		F25676C6225592F5000985EE /* avx_mathfun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avx_mathfun.h; sourceTree = "<group>"; };
+		F25676C7225592F5000985EE /* memorydata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorydata.h; sourceTree = "<group>"; };
+		F25676C8225592F5000985EE /* innerproduct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innerproduct.cpp; sourceTree = "<group>"; };
+		F25676C9225592F5000985EE /* argmax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argmax.h; sourceTree = "<group>"; };
+		F25676CA225592F5000985EE /* yolov3detectionoutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yolov3detectionoutput.h; sourceTree = "<group>"; };
+		F25676CB225592F5000985EE /* sigmoid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sigmoid.h; sourceTree = "<group>"; };
+		F25676CC225592F5000985EE /* softmax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = softmax.cpp; sourceTree = "<group>"; };
+		F25676CD225592F5000985EE /* deconvolutiondepthwise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolutiondepthwise.h; sourceTree = "<group>"; };
+		F25676CE225592F5000985EE /* bnll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bnll.h; sourceTree = "<group>"; };
+		F25676CF225592F5000985EE /* clip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clip.cpp; sourceTree = "<group>"; };
+		F25676D0225592F5000985EE /* padding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = padding.cpp; sourceTree = "<group>"; };
+		F25676D1225592F5000985EE /* requantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = requantize.cpp; sourceTree = "<group>"; };
+		F25676D2225592F5000985EE /* reorg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reorg.h; sourceTree = "<group>"; };
+		F25676D3225592F5000985EE /* roipooling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roipooling.h; sourceTree = "<group>"; };
+		F25676D4225592F5000985EE /* threshold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threshold.cpp; sourceTree = "<group>"; };
+		F25676D5225592F5000985EE /* quantize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quantize.cpp; sourceTree = "<group>"; };
+		F25676D7225592F5000985EE /* softmax_exp_sub_max_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_exp_sub_max_pack4.comp; sourceTree = "<group>"; };
+		F25676D8225592F5000985EE /* lrn_square_pad_across_channel_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_square_pad_across_channel_pack4.comp; sourceTree = "<group>"; };
+		F25676D9225592F5000985EE /* cast_fp16_to_fp32_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cast_fp16_to_fp32_pack4.comp; sourceTree = "<group>"; };
+		F25676DA225592F5000985EE /* interp.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interp.comp; sourceTree = "<group>"; };
+		F25676DB225592F5000985EE /* reshape_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reshape_pack1to4.comp; sourceTree = "<group>"; };
+		F25676DC225592F5000985EE /* absval_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = absval_pack4.comp; sourceTree = "<group>"; };
+		F25676DD225592F5000985EE /* deconvolution_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolution_pack1to4.comp; sourceTree = "<group>"; };
+		F25676DE225592F5000985EE /* deconvolution.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolution.comp; sourceTree = "<group>"; };
+		F25676DF225592F5000985EE /* softmax_reduce_sum.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_reduce_sum.comp; sourceTree = "<group>"; };
+		F25676E0225592F5000985EE /* lrn_norm.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_norm.comp; sourceTree = "<group>"; };
+		F25676E1225592F5000985EE /* pooling_global.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pooling_global.comp; sourceTree = "<group>"; };
+		F25676E2225592F5000985EE /* innerproduct_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerproduct_pack4to1.comp; sourceTree = "<group>"; };
+		F25676E3225592F5000985EE /* priorbox.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priorbox.comp; sourceTree = "<group>"; };
+		F25676E4225592F5000985EE /* shufflechannel_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shufflechannel_pack4.comp; sourceTree = "<group>"; };
+		F25676E5225592F5000985EE /* deconvolutiondepthwise_group.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise_group.comp; sourceTree = "<group>"; };
+		F25676E6225592F5000985EE /* lrn_square_pad.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_square_pad.comp; sourceTree = "<group>"; };
+		F25676E7225592F5000985EE /* convolutiondepthwise_group_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise_group_pack4.comp; sourceTree = "<group>"; };
+		F25676E8225592F5000985EE /* relu.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = relu.comp; sourceTree = "<group>"; };
+		F25676E9225592F5000985EE /* pooling_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pooling_pack4.comp; sourceTree = "<group>"; };
+		F25676EA225592F5000985EE /* permute_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = permute_pack4to1.comp; sourceTree = "<group>"; };
+		F25676EB225592F5000985EE /* unaryop_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unaryop_pack4.comp; sourceTree = "<group>"; };
+		F25676EC225592F5000985EE /* deconvolutiondepthwise_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise_pack4.comp; sourceTree = "<group>"; };
+		F25676ED225592F5000985EE /* convolutiondepthwise.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise.comp; sourceTree = "<group>"; };
+		F25676EE225592F5000985EE /* cast_fp32_to_fp16.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cast_fp32_to_fp16.comp; sourceTree = "<group>"; };
+		F25676EF225592F5000985EE /* binaryop.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binaryop.comp; sourceTree = "<group>"; };
+		F25676F0225592F5000985EE /* softmax_exp_sub_max.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_exp_sub_max.comp; sourceTree = "<group>"; };
+		F25676F1225592F5000985EE /* lrn_square_pad_within_channel_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_square_pad_within_channel_pack4.comp; sourceTree = "<group>"; };
+		F25676F2225592F5000985EE /* pooling_global_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pooling_global_pack4.comp; sourceTree = "<group>"; };
+		F25676F3225592F5000985EE /* permute.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = permute.comp; sourceTree = "<group>"; };
+		F25676F4225592F5000985EE /* innerproduct_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerproduct_pack1to4.comp; sourceTree = "<group>"; };
+		F25676F5225592F5000985EE /* flatten.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flatten.comp; sourceTree = "<group>"; };
+		F25676F6225592F5000985EE /* convolution.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolution.comp; sourceTree = "<group>"; };
+		F25676F7225592F5000985EE /* unaryop.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unaryop.comp; sourceTree = "<group>"; };
+		F25676F8225592F5000985EE /* prelu.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = prelu.comp; sourceTree = "<group>"; };
+		F25676F9225592F5000985EE /* reorg_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reorg_pack4.comp; sourceTree = "<group>"; };
+		F25676FA225592F5000985EE /* deconvolution_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolution_pack4to1.comp; sourceTree = "<group>"; };
+		F25676FB225592F5000985EE /* reshape_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reshape_pack4to1.comp; sourceTree = "<group>"; };
+		F25676FC225592F5000985EE /* tanh_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tanh_pack4.comp; sourceTree = "<group>"; };
+		F25676FD225592F5000985EE /* relu_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = relu_pack4.comp; sourceTree = "<group>"; };
+		F25676FE225592F5000985EE /* binaryop_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binaryop_pack4.comp; sourceTree = "<group>"; };
+		F25676FF225592F5000985EE /* reorg_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reorg_pack1to4.comp; sourceTree = "<group>"; };
+		F2567700225592F5000985EE /* concat_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = concat_pack4to1.comp; sourceTree = "<group>"; };
+		F2567701225592F5000985EE /* softmax_div_sum_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_div_sum_pack4.comp; sourceTree = "<group>"; };
+		F2567702225592F5000985EE /* interp_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interp_pack4.comp; sourceTree = "<group>"; };
+		F2567703225592F5000985EE /* convolutiondepthwise_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise_pack4.comp; sourceTree = "<group>"; };
+		F2567704225592F5000985EE /* sigmoid_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sigmoid_pack4.comp; sourceTree = "<group>"; };
+		F2567705225592F5000985EE /* innerproduct_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerproduct_pack4.comp; sourceTree = "<group>"; };
+		F2567706225592F5000985EE /* tanh.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tanh.comp; sourceTree = "<group>"; };
+		F2567707225592F5000985EE /* pooling.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pooling.comp; sourceTree = "<group>"; };
+		F2567708225592F5000985EE /* convolutiondepthwise_group.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise_group.comp; sourceTree = "<group>"; };
+		F2567709225592F5000985EE /* convolution_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolution_pack4.comp; sourceTree = "<group>"; };
+		F256770A225592F5000985EE /* deconvolutiondepthwise_group_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise_group_pack4to1.comp; sourceTree = "<group>"; };
+		F256770B225592F5000985EE /* convolution_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolution_pack4to1.comp; sourceTree = "<group>"; };
+		F256770C225592F5000985EE /* convolutiondepthwise_group_pack4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise_group_pack4to1.comp; sourceTree = "<group>"; };
+		F256770D225592F5000985EE /* priorbox_mxnet.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = priorbox_mxnet.comp; sourceTree = "<group>"; };
+		F256770E225592F5000985EE /* padding.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = padding.comp; sourceTree = "<group>"; };
+		F256770F225592F5000985EE /* deconvolutiondepthwise_group_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise_group_pack4.comp; sourceTree = "<group>"; };
+		F2567710225592F5000985EE /* prelu_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = prelu_pack4.comp; sourceTree = "<group>"; };
+		F2567711225592F5000985EE /* lrn_norm_within_channel_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_norm_within_channel_pack4.comp; sourceTree = "<group>"; };
+		F2567712225592F5000985EE /* deconvolution_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolution_pack4.comp; sourceTree = "<group>"; };
+		F2567713225592F5000985EE /* crop.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crop.comp; sourceTree = "<group>"; };
+		F2567714225592F5000985EE /* batchnorm.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = batchnorm.comp; sourceTree = "<group>"; };
+		F2567715225592F5000985EE /* cast_fp16_to_fp32.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cast_fp16_to_fp32.comp; sourceTree = "<group>"; };
+		F2567716225592F5000985EE /* absval.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = absval.comp; sourceTree = "<group>"; };
+		F2567717225592F5000985EE /* concat_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = concat_pack4.comp; sourceTree = "<group>"; };
+		F2567718225592F5000985EE /* softmax_div_sum.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_div_sum.comp; sourceTree = "<group>"; };
+		F2567719225592F5000985EE /* crop_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crop_pack4.comp; sourceTree = "<group>"; };
+		F256771A225592F5000985EE /* packing_4to1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packing_4to1.comp; sourceTree = "<group>"; };
+		F256771B225592F5000985EE /* padding_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = padding_pack4.comp; sourceTree = "<group>"; };
+		F256771C225592F5000985EE /* shufflechannel.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shufflechannel.comp; sourceTree = "<group>"; };
+		F256771D225592F5000985EE /* flatten_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flatten_pack4.comp; sourceTree = "<group>"; };
+		F256771E225592F5000985EE /* reshape.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reshape.comp; sourceTree = "<group>"; };
+		F256771F225592F5000985EE /* convolution_1x1s1d1.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolution_1x1s1d1.comp; sourceTree = "<group>"; };
+		F2567720225592F5000985EE /* concat.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = concat.comp; sourceTree = "<group>"; };
+		F2567721225592F5000985EE /* clip_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clip_pack4.comp; sourceTree = "<group>"; };
+		F2567722225592F5000985EE /* reshape_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reshape_pack4.comp; sourceTree = "<group>"; };
+		F2567723225592F5000985EE /* eltwise_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eltwise_pack4.comp; sourceTree = "<group>"; };
+		F2567724225592F5000985EE /* innerproduct.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = innerproduct.comp; sourceTree = "<group>"; };
+		F2567725225592F5000985EE /* reorg.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reorg.comp; sourceTree = "<group>"; };
+		F2567726225592F5000985EE /* clip.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clip.comp; sourceTree = "<group>"; };
+		F2567727225592F5000985EE /* convolutiondepthwise_group_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolutiondepthwise_group_pack1to4.comp; sourceTree = "<group>"; };
+		F2567728225592F5000985EE /* lrn_norm_across_channel_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lrn_norm_across_channel_pack4.comp; sourceTree = "<group>"; };
+		F2567729225592F5000985EE /* softmax_reduce_sum_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_reduce_sum_pack4.comp; sourceTree = "<group>"; };
+		F256772A225592F5000985EE /* deconvolutiondepthwise_group_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise_group_pack1to4.comp; sourceTree = "<group>"; };
+		F256772B225592F5000985EE /* convolution_pack1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = convolution_pack1to4.comp; sourceTree = "<group>"; };
+		F256772C225592F5000985EE /* dropout_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dropout_pack4.comp; sourceTree = "<group>"; };
+		F256772D225592F5000985EE /* batchnorm_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = batchnorm_pack4.comp; sourceTree = "<group>"; };
+		F256772E225592F5000985EE /* cast_fp32_to_fp16_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cast_fp32_to_fp16_pack4.comp; sourceTree = "<group>"; };
+		F256772F225592F5000985EE /* deconvolutiondepthwise.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deconvolutiondepthwise.comp; sourceTree = "<group>"; };
+		F2567730225592F5000985EE /* packing_1to4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packing_1to4.comp; sourceTree = "<group>"; };
+		F2567731225592F5000985EE /* scale.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scale.comp; sourceTree = "<group>"; };
+		F2567732225592F5000985EE /* scale_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scale_pack4.comp; sourceTree = "<group>"; };
+		F2567733225592F5000985EE /* dropout.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dropout.comp; sourceTree = "<group>"; };
+		F2567734225592F5000985EE /* sigmoid.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sigmoid.comp; sourceTree = "<group>"; };
+		F2567735225592F5000985EE /* softmax_reduce_max_pack4.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_reduce_max_pack4.comp; sourceTree = "<group>"; };
+		F2567736225592F5000985EE /* softmax_reduce_max.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = softmax_reduce_max.comp; sourceTree = "<group>"; };
+		F2567737225592F5000985EE /* eltwise.comp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eltwise.comp; sourceTree = "<group>"; };
+		F2567738225592F5000985EE /* yolov3detectionoutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yolov3detectionoutput.cpp; sourceTree = "<group>"; };
+		F2567739225592F5000985EE /* tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tile.cpp; sourceTree = "<group>"; };
+		F256773A225592F5000985EE /* detectionoutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detectionoutput.h; sourceTree = "<group>"; };
+		F256773B225592F5000985EE /* exp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exp.h; sourceTree = "<group>"; };
+		F256773C225592F5000985EE /* pooling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pooling.h; sourceTree = "<group>"; };
+		F256773D225592F5000985EE /* cast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cast.cpp; sourceTree = "<group>"; };
+		F256773F225592F5000985EE /* relu_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = relu_arm.cpp; sourceTree = "<group>"; };
+		F2567740225592F5000985EE /* deconvolution_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deconvolution_arm.cpp; sourceTree = "<group>"; };
+		F2567741225592F5000985EE /* convolution_7x7_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_7x7_int8.h; sourceTree = "<group>"; };
+		F2567742225592F5000985EE /* convolution_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolution_arm.cpp; sourceTree = "<group>"; };
+		F2567743225592F5000985EE /* dequantize_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dequantize_arm.cpp; sourceTree = "<group>"; };
+		F2567744225592F5000985EE /* lrn_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lrn_arm.h; sourceTree = "<group>"; };
+		F2567745225592F5000985EE /* convolution_1x1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_1x1.h; sourceTree = "<group>"; };
+		F2567746225592F5000985EE /* convolutiondepthwise_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_arm.h; sourceTree = "<group>"; };
+		F2567747225592F5000985EE /* batchnorm_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = batchnorm_arm.cpp; sourceTree = "<group>"; };
+		F2567748225592F5000985EE /* convolutiondepthwise_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolutiondepthwise_arm.cpp; sourceTree = "<group>"; };
+		F2567749225592F5000985EE /* innerproduct_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innerproduct_arm.h; sourceTree = "<group>"; };
+		F256774A225592F5000985EE /* dequantize_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dequantize_arm.h; sourceTree = "<group>"; };
+		F256774B225592F5000985EE /* bias_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bias_arm.h; sourceTree = "<group>"; };
+		F256774C225592F5000985EE /* convolution_1x1_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_1x1_int8.h; sourceTree = "<group>"; };
+		F256774D225592F5000985EE /* convolution_5x5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_5x5.h; sourceTree = "<group>"; };
+		F256774E225592F5000985EE /* softmax_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = softmax_arm.h; sourceTree = "<group>"; };
+		F256774F225592F5000985EE /* softmax_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = softmax_arm.cpp; sourceTree = "<group>"; };
+		F2567750225592F5000985EE /* convolution_2x2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_2x2.h; sourceTree = "<group>"; };
+		F2567751225592F5000985EE /* convolutiondepthwise_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_3x3.h; sourceTree = "<group>"; };
+		F2567752225592F5000985EE /* quantize_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quantize_arm.h; sourceTree = "<group>"; };
+		F2567753225592F5000985EE /* quantize_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = quantize_arm.cpp; sourceTree = "<group>"; };
+		F2567754225592F5000985EE /* convolutiondepthwise_3x3_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_3x3_int8.h; sourceTree = "<group>"; };
+		F2567755225592F5000985EE /* pooling_2x2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pooling_2x2.h; sourceTree = "<group>"; };
+		F2567756225592F5000985EE /* interp_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = interp_arm.cpp; sourceTree = "<group>"; };
+		F2567757225592F5000985EE /* eltwise_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = eltwise_arm.cpp; sourceTree = "<group>"; };
+		F2567758225592F5000985EE /* lrn_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lrn_arm.cpp; sourceTree = "<group>"; };
+		F2567759225592F5000985EE /* bias_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bias_arm.cpp; sourceTree = "<group>"; };
+		F256775A225592F5000985EE /* sigmoid_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sigmoid_arm.h; sourceTree = "<group>"; };
+		F256775B225592F5000985EE /* requantize_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = requantize_arm.cpp; sourceTree = "<group>"; };
+		F256775C225592F5000985EE /* innerproduct_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innerproduct_arm.cpp; sourceTree = "<group>"; };
+		F256775D225592F6000985EE /* convolution_5x5_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_5x5_int8.h; sourceTree = "<group>"; };
+		F256775E225592F6000985EE /* convolution_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_3x3.h; sourceTree = "<group>"; };
+		F256775F225592F6000985EE /* deconvolution_4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolution_4x4.h; sourceTree = "<group>"; };
+		F2567760225592F6000985EE /* relu_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = relu_arm.h; sourceTree = "<group>"; };
+		F2567761225592F6000985EE /* eltwise_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eltwise_arm.h; sourceTree = "<group>"; };
+		F2567762225592F6000985EE /* requantize_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = requantize_arm.h; sourceTree = "<group>"; };
+		F2567763225592F6000985EE /* batchnorm_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = batchnorm_arm.h; sourceTree = "<group>"; };
+		F2567764225592F6000985EE /* convolution_7x7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_7x7.h; sourceTree = "<group>"; };
+		F2567765225592F6000985EE /* neon_mathfun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neon_mathfun.h; sourceTree = "<group>"; };
+		F2567766225592F6000985EE /* prelu_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prelu_arm.cpp; sourceTree = "<group>"; };
+		F2567767225592F6000985EE /* pooling_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pooling_3x3.h; sourceTree = "<group>"; };
+		F2567768225592F6000985EE /* convolution_3x3_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_3x3_int8.h; sourceTree = "<group>"; };
+		F2567769225592F6000985EE /* deconvolution_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolution_arm.h; sourceTree = "<group>"; };
+		F256776A225592F6000985EE /* scale_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_arm.h; sourceTree = "<group>"; };
+		F256776B225592F6000985EE /* clip_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clip_arm.cpp; sourceTree = "<group>"; };
+		F256776C225592F6000985EE /* deconvolutiondepthwise_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolutiondepthwise_arm.h; sourceTree = "<group>"; };
+		F256776D225592F6000985EE /* prelu_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prelu_arm.h; sourceTree = "<group>"; };
+		F256776E225592F6000985EE /* convolution_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_arm.h; sourceTree = "<group>"; };
+		F256776F225592F6000985EE /* convolution_sgemm_int8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_sgemm_int8.h; sourceTree = "<group>"; };
+		F2567770225592F6000985EE /* scale_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale_arm.cpp; sourceTree = "<group>"; };
+		F2567771225592F6000985EE /* absval_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = absval_arm.cpp; sourceTree = "<group>"; };
+		F2567772225592F6000985EE /* sigmoid_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sigmoid_arm.cpp; sourceTree = "<group>"; };
+		F2567773225592F6000985EE /* interp_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interp_arm.h; sourceTree = "<group>"; };
+		F2567774225592F6000985EE /* pooling_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pooling_arm.cpp; sourceTree = "<group>"; };
+		F2567775225592F6000985EE /* deconvolutiondepthwise_arm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deconvolutiondepthwise_arm.cpp; sourceTree = "<group>"; };
+		F2567776225592F6000985EE /* clip_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clip_arm.h; sourceTree = "<group>"; };
+		F2567777225592F6000985EE /* deconvolution_3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolution_3x3.h; sourceTree = "<group>"; };
+		F2567778225592F6000985EE /* absval_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = absval_arm.h; sourceTree = "<group>"; };
+		F2567779225592F6000985EE /* convolution_4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolution_4x4.h; sourceTree = "<group>"; };
+		F256777A225592F6000985EE /* pooling_arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pooling_arm.h; sourceTree = "<group>"; };
+		F256777B225592F6000985EE /* convolutiondepthwise_5x5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolutiondepthwise_5x5.h; sourceTree = "<group>"; };
+		F256777C225592F6000985EE /* squeeze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = squeeze.h; sourceTree = "<group>"; };
+		F256777D225592F6000985EE /* yolodetectionoutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yolodetectionoutput.h; sourceTree = "<group>"; };
+		F256777E225592F6000985EE /* bias.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bias.cpp; sourceTree = "<group>"; };
+		F256777F225592F6000985EE /* scale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scale.cpp; sourceTree = "<group>"; };
+		F2567780225592F6000985EE /* binaryop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = binaryop.cpp; sourceTree = "<group>"; };
+		F2567781225592F6000985EE /* unaryop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unaryop.h; sourceTree = "<group>"; };
+		F2567782225592F6000985EE /* interp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interp.h; sourceTree = "<group>"; };
+		F2567783225592F6000985EE /* unaryop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unaryop.cpp; sourceTree = "<group>"; };
+		F2567784225592F6000985EE /* innerproduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innerproduct.h; sourceTree = "<group>"; };
+		F2567785225592F6000985EE /* mvn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mvn.h; sourceTree = "<group>"; };
+		F2567786225592F6000985EE /* expanddims.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expanddims.h; sourceTree = "<group>"; };
+		F2567787225592F6000985EE /* reduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reduction.h; sourceTree = "<group>"; };
+		F2567788225592F6000985EE /* absval.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = absval.cpp; sourceTree = "<group>"; };
+		F2567789225592F6000985EE /* convolution.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = convolution.cpp; sourceTree = "<group>"; };
+		F256778A225592F6000985EE /* roialign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = roialign.cpp; sourceTree = "<group>"; };
+		F256778B225592F6000985EE /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		F256778C225592F6000985EE /* binaryop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binaryop.h; sourceTree = "<group>"; };
+		F256778D225592F6000985EE /* deconvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deconvolution.h; sourceTree = "<group>"; };
+		F256778E225592F6000985EE /* padding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = padding.h; sourceTree = "<group>"; };
+		F256778F225592F6000985EE /* yolodetectionoutput.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yolodetectionoutput.cpp; sourceTree = "<group>"; };
+		F2567790225592F6000985EE /* lrn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lrn.h; sourceTree = "<group>"; };
+		F2567791225592F6000985EE /* opencv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opencv.h; sourceTree = "<group>"; };
+		F2567792225592F6000985EE /* allocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocator.h; sourceTree = "<group>"; };
+		F2567793225592F6000985EE /* allocator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = allocator.cpp; sourceTree = "<group>"; };
+		F2567794225592F6000985EE /* cpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu.h; sourceTree = "<group>"; };
+		F2567795225592F6000985EE /* mat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mat.cpp; sourceTree = "<group>"; };
+		F2567796225592F6000985EE /* modelbin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = modelbin.cpp; sourceTree = "<group>"; };
+		F2567797225592F6000985EE /* layer_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layer_type.h; sourceTree = "<group>"; };
+		F2567798225592F6000985EE /* mat_pixel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mat_pixel.cpp; sourceTree = "<group>"; };
+		F2567799225592F6000985EE /* pipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pipeline.h; sourceTree = "<group>"; };
+		F256779A225592F6000985EE /* command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = command.h; sourceTree = "<group>"; };
+		F256779B225592F6000985EE /* benchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = benchmark.h; sourceTree = "<group>"; };
+		F256779C225592F6000985EE /* cpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpu.cpp; sourceTree = "<group>"; };
+		F256779D225592F6000985EE /* layer_declaration.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_declaration.h.in; sourceTree = "<group>"; };
+		F256779E225592F6000985EE /* gpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gpu.cpp; sourceTree = "<group>"; };
+		F256779F225592F6000985EE /* layer_shader_spv_data.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = layer_shader_spv_data.h.in; sourceTree = "<group>"; };
+		F25677A0225592F6000985EE /* opencv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = opencv.cpp; sourceTree = "<group>"; };
+		F25677A1225592F6000985EE /* paramdict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = paramdict.cpp; sourceTree = "<group>"; };
+		F2567885225594E3000985EE /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
+		F2567886225594E3000985EE /* result_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_info.json; sourceTree = "<group>"; };
+		F2567887225594E3000985EE /* squeezenet_v1.1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squeezenet_v1.1.param; sourceTree = "<group>"; };
+		F2567888225594E3000985EE /* squeezenet_v1.1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = squeezenet_v1.1.bin; sourceTree = "<group>"; };
+		F256788E22559623000985EE /* MoltenVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenVK.framework; path = ../MoltenVK/iOS/framework/MoltenVK.framework; sourceTree = "<group>"; };
+		F2567893225598AA000985EE /* TestSupport.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSupport.mm; sourceTree = "<group>"; };
+		F2567894225598AA000985EE /* TestSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSupport.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F256762B225592D7000985EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F256788F22559624000985EE /* MoltenVK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2567625225592D7000985EE = {
+			isa = PBXGroup;
+			children = (
+				F2567884225594E3000985EE /* testSupport */,
+				F2567647225592F5000985EE /* src */,
+				F2567630225592D7000985EE /* NcnnSrcDemo_MoltenVK */,
+				F256762F225592D7000985EE /* Products */,
+				F256788D22559623000985EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F256762F225592D7000985EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F256762E225592D7000985EE /* NcnnSrcDemo_MoltenVK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2567630225592D7000985EE /* NcnnSrcDemo_MoltenVK */ = {
+			isa = PBXGroup;
+			children = (
+				F2567631225592D7000985EE /* AppDelegate.h */,
+				F2567632225592D7000985EE /* AppDelegate.m */,
+				F2567634225592D7000985EE /* ViewController.h */,
+				F2567635225592D7000985EE /* ViewController.mm */,
+				F2567637225592D7000985EE /* Main.storyboard */,
+				F256763A225592D8000985EE /* Assets.xcassets */,
+				F256763C225592D8000985EE /* LaunchScreen.storyboard */,
+				F256763F225592D8000985EE /* Info.plist */,
+				F2567640225592D8000985EE /* main.m */,
+			);
+			path = NcnnSrcDemo_MoltenVK;
+			sourceTree = "<group>";
+		};
+		F2567647225592F5000985EE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F2567648225592F5000985EE /* modelbin.h */,
+				F2567649225592F5000985EE /* mat_pixel_resize.cpp */,
+				F256764A225592F5000985EE /* layer_shader_registry.h.in */,
+				F256764B225592F5000985EE /* layer_type_enum.h.in */,
+				F256764C225592F5000985EE /* CMakeLists.txt */,
+				F256764D225592F5000985EE /* net.h */,
+				F256764E225592F5000985EE /* mat.h */,
+				F256764F225592F5000985EE /* platform.h.in */,
+				F2567650225592F5000985EE /* blob.h */,
+				F2567651225592F5000985EE /* blob.cpp */,
+				F2567652225592F5000985EE /* layer.h */,
+				F2567653225592F5000985EE /* layer.cpp */,
+				F2567654225592F5000985EE /* benchmark.cpp */,
+				F2567655225592F5000985EE /* command.cpp */,
+				F2567656225592F5000985EE /* pipeline.cpp */,
+				F2567657225592F5000985EE /* net.cpp */,
+				F2567658225592F5000985EE /* paramdict.h */,
+				F2567659225592F5000985EE /* gpu.h */,
+				F256765A225592F5000985EE /* layer_registry.h.in */,
+				F256765B225592F5000985EE /* layer */,
+				F2567791225592F6000985EE /* opencv.h */,
+				F2567792225592F6000985EE /* allocator.h */,
+				F2567793225592F6000985EE /* allocator.cpp */,
+				F2567794225592F6000985EE /* cpu.h */,
+				F2567795225592F6000985EE /* mat.cpp */,
+				F2567796225592F6000985EE /* modelbin.cpp */,
+				F2567797225592F6000985EE /* layer_type.h */,
+				F2567798225592F6000985EE /* mat_pixel.cpp */,
+				F2567799225592F6000985EE /* pipeline.h */,
+				F256779A225592F6000985EE /* command.h */,
+				F256779B225592F6000985EE /* benchmark.h */,
+				F256779C225592F6000985EE /* cpu.cpp */,
+				F256779D225592F6000985EE /* layer_declaration.h.in */,
+				F256779E225592F6000985EE /* gpu.cpp */,
+				F256779F225592F6000985EE /* layer_shader_spv_data.h.in */,
+				F25677A0225592F6000985EE /* opencv.cpp */,
+				F25677A1225592F6000985EE /* paramdict.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F256765B225592F5000985EE /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				F256765C225592F5000985EE /* flatten.cpp */,
+				F256765D225592F5000985EE /* softmax.h */,
+				F256765E225592F5000985EE /* squeeze.cpp */,
+				F256765F225592F5000985EE /* dropout.cpp */,
+				F2567660225592F5000985EE /* quantize.h */,
+				F2567661225592F5000985EE /* dequantize.h */,
+				F2567662225592F5000985EE /* matmul.h */,
+				F2567663225592F5000985EE /* permute.h */,
+				F2567664225592F5000985EE /* batchnorm.cpp */,
+				F2567665225592F5000985EE /* argmax.cpp */,
+				F2567666225592F5000985EE /* shufflechannel.cpp */,
+				F2567667225592F5000985EE /* scale.h */,
+				F2567668225592F5000985EE /* power.h */,
+				F2567669225592F5000985EE /* flatten.h */,
+				F256766A225592F5000985EE /* embed.h */,
+				F256766B225592F5000985EE /* roialign.h */,
+				F256766C225592F5000985EE /* dequantize.cpp */,
+				F256766D225592F5000985EE /* input.h */,
+				F256766E225592F5000985EE /* log.cpp */,
+				F256766F225592F5000985EE /* detectionoutput.cpp */,
+				F2567670225592F5000985EE /* memorydata.cpp */,
+				F2567671225592F5000985EE /* eltwise.h */,
+				F2567672225592F5000985EE /* input.cpp */,
+				F2567673225592F5000985EE /* reshape.cpp */,
+				F2567674225592F5000985EE /* rnn.h */,
+				F2567675225592F5000985EE /* sigmoid.cpp */,
+				F2567676225592F5000985EE /* shufflechannel.h */,
+				F2567677225592F5000985EE /* requantize.h */,
+				F2567678225592F5000985EE /* deconvolution.cpp */,
+				F2567679225592F5000985EE /* interp.cpp */,
+				F256767A225592F5000985EE /* deconvolutiondepthwise.cpp */,
+				F256767B225592F5000985EE /* tile.h */,
+				F256767C225592F5000985EE /* psroipooling.h */,
+				F256767D225592F5000985EE /* batchnorm.h */,
+				F256767E225592F5000985EE /* tanh.cpp */,
+				F256767F225592F5000985EE /* expanddims.cpp */,
+				F2567680225592F5000985EE /* relu.h */,
+				F2567681225592F5000985EE /* split.cpp */,
+				F2567682225592F5000985EE /* matmul.cpp */,
+				F2567683225592F5000985EE /* reorg.cpp */,
+				F2567684225592F5000985EE /* roipooling.cpp */,
+				F2567685225592F5000985EE /* convolution.h */,
+				F2567686225592F5000985EE /* reduction.cpp */,
+				F2567687225592F5000985EE /* permute.cpp */,
+				F2567688225592F5000985EE /* proposal.h */,
+				F2567689225592F5000985EE /* bnll.cpp */,
+				F256768A225592F5000985EE /* elu.cpp */,
+				F256768B225592F5000985EE /* exp.cpp */,
+				F256768C225592F5000985EE /* instancenorm.h */,
+				F256768D225592F5000985EE /* relu.cpp */,
+				F256768E225592F5000985EE /* embed.cpp */,
+				F256768F225592F5000985EE /* bias.h */,
+				F2567690225592F5000985EE /* prelu.h */,
+				F2567691225592F5000985EE /* absval.h */,
+				F2567692225592F5000985EE /* slice.cpp */,
+				F2567693225592F5000985EE /* slice.h */,
+				F2567694225592F5000985EE /* lrn.cpp */,
+				F2567695225592F5000985EE /* normalize.h */,
+				F2567696225592F5000985EE /* instancenorm.cpp */,
+				F2567697225592F5000985EE /* spp.h */,
+				F2567698225592F5000985EE /* proposal.cpp */,
+				F2567699225592F5000985EE /* eltwise.cpp */,
+				F256769A225592F5000985EE /* packing.h */,
+				F256769B225592F5000985EE /* prelu.cpp */,
+				F256769C225592F5000985EE /* pooling.cpp */,
+				F256769D225592F5000985EE /* priorbox.h */,
+				F256769E225592F5000985EE /* lstm.h */,
+				F256769F225592F5000985EE /* spp.cpp */,
+				F25676A0225592F5000985EE /* lstm.cpp */,
+				F25676A1225592F5000985EE /* threshold.h */,
+				F25676A2225592F5000985EE /* normalize.cpp */,
+				F25676A3225592F5000985EE /* concat.cpp */,
+				F25676A4225592F5000985EE /* concat.h */,
+				F25676A5225592F5000985EE /* tanh.h */,
+				F25676A6225592F5000985EE /* packing.cpp */,
+				F25676A7225592F5000985EE /* convolutiondepthwise.cpp */,
+				F25676A8225592F5000985EE /* rnn.cpp */,
+				F25676A9225592F5000985EE /* convolutiondepthwise.h */,
+				F25676AA225592F5000985EE /* crop.cpp */,
+				F25676AB225592F5000985EE /* psroipooling.cpp */,
+				F25676AC225592F5000985EE /* power.cpp */,
+				F25676AD225592F5000985EE /* mvn.cpp */,
+				F25676AE225592F5000985EE /* dropout.h */,
+				F25676AF225592F5000985EE /* elu.h */,
+				F25676B0225592F5000985EE /* priorbox.cpp */,
+				F25676B1225592F5000985EE /* log.h */,
+				F25676B2225592F5000985EE /* clip.h */,
+				F25676B3225592F5000985EE /* reshape.h */,
+				F25676B4225592F5000985EE /* crop.h */,
+				F25676B5225592F5000985EE /* cast.h */,
+				F25676B6225592F5000985EE /* x86 */,
+				F25676C7225592F5000985EE /* memorydata.h */,
+				F25676C8225592F5000985EE /* innerproduct.cpp */,
+				F25676C9225592F5000985EE /* argmax.h */,
+				F25676CA225592F5000985EE /* yolov3detectionoutput.h */,
+				F25676CB225592F5000985EE /* sigmoid.h */,
+				F25676CC225592F5000985EE /* softmax.cpp */,
+				F25676CD225592F5000985EE /* deconvolutiondepthwise.h */,
+				F25676CE225592F5000985EE /* bnll.h */,
+				F25676CF225592F5000985EE /* clip.cpp */,
+				F25676D0225592F5000985EE /* padding.cpp */,
+				F25676D1225592F5000985EE /* requantize.cpp */,
+				F25676D2225592F5000985EE /* reorg.h */,
+				F25676D3225592F5000985EE /* roipooling.h */,
+				F25676D4225592F5000985EE /* threshold.cpp */,
+				F25676D5225592F5000985EE /* quantize.cpp */,
+				F25676D6225592F5000985EE /* shader */,
+				F2567738225592F5000985EE /* yolov3detectionoutput.cpp */,
+				F2567739225592F5000985EE /* tile.cpp */,
+				F256773A225592F5000985EE /* detectionoutput.h */,
+				F256773B225592F5000985EE /* exp.h */,
+				F256773C225592F5000985EE /* pooling.h */,
+				F256773D225592F5000985EE /* cast.cpp */,
+				F256773E225592F5000985EE /* arm */,
+				F256777C225592F6000985EE /* squeeze.h */,
+				F256777D225592F6000985EE /* yolodetectionoutput.h */,
+				F256777E225592F6000985EE /* bias.cpp */,
+				F256777F225592F6000985EE /* scale.cpp */,
+				F2567780225592F6000985EE /* binaryop.cpp */,
+				F2567781225592F6000985EE /* unaryop.h */,
+				F2567782225592F6000985EE /* interp.h */,
+				F2567783225592F6000985EE /* unaryop.cpp */,
+				F2567784225592F6000985EE /* innerproduct.h */,
+				F2567785225592F6000985EE /* mvn.h */,
+				F2567786225592F6000985EE /* expanddims.h */,
+				F2567787225592F6000985EE /* reduction.h */,
+				F2567788225592F6000985EE /* absval.cpp */,
+				F2567789225592F6000985EE /* convolution.cpp */,
+				F256778A225592F6000985EE /* roialign.cpp */,
+				F256778B225592F6000985EE /* split.h */,
+				F256778C225592F6000985EE /* binaryop.h */,
+				F256778D225592F6000985EE /* deconvolution.h */,
+				F256778E225592F6000985EE /* padding.h */,
+				F256778F225592F6000985EE /* yolodetectionoutput.cpp */,
+				F2567790225592F6000985EE /* lrn.h */,
+			);
+			path = layer;
+			sourceTree = "<group>";
+		};
+		F25676B6225592F5000985EE /* x86 */ = {
+			isa = PBXGroup;
+			children = (
+				F25676B7225592F5000985EE /* convolution_7x7_int8.h */,
+				F25676B8225592F5000985EE /* convolution_1x1.h */,
+				F25676B9225592F5000985EE /* convolutiondepthwise_x86.h */,
+				F25676BA225592F5000985EE /* convolution_1x1_int8.h */,
+				F25676BB225592F5000985EE /* convolution_5x5.h */,
+				F25676BC225592F5000985EE /* convolutiondepthwise_3x3.h */,
+				F25676BD225592F5000985EE /* convolutiondepthwise_x86.cpp */,
+				F25676BE225592F5000985EE /* convolutiondepthwise_3x3_int8.h */,
+				F25676BF225592F5000985EE /* convolution_x86.cpp */,
+				F25676C0225592F5000985EE /* convolution_5x5_int8.h */,
+				F25676C1225592F5000985EE /* convolution_3x3.h */,
+				F25676C2225592F5000985EE /* sse_mathfun.h */,
+				F25676C3225592F5000985EE /* convolution_3x3_int8.h */,
+				F25676C4225592F5000985EE /* convolution_sgemm_int8.h */,
+				F25676C5225592F5000985EE /* convolution_x86.h */,
+				F25676C6225592F5000985EE /* avx_mathfun.h */,
+			);
+			path = x86;
+			sourceTree = "<group>";
+		};
+		F25676D6225592F5000985EE /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				F25676D7225592F5000985EE /* softmax_exp_sub_max_pack4.comp */,
+				F25676D8225592F5000985EE /* lrn_square_pad_across_channel_pack4.comp */,
+				F25676D9225592F5000985EE /* cast_fp16_to_fp32_pack4.comp */,
+				F25676DA225592F5000985EE /* interp.comp */,
+				F25676DB225592F5000985EE /* reshape_pack1to4.comp */,
+				F25676DC225592F5000985EE /* absval_pack4.comp */,
+				F25676DD225592F5000985EE /* deconvolution_pack1to4.comp */,
+				F25676DE225592F5000985EE /* deconvolution.comp */,
+				F25676DF225592F5000985EE /* softmax_reduce_sum.comp */,
+				F25676E0225592F5000985EE /* lrn_norm.comp */,
+				F25676E1225592F5000985EE /* pooling_global.comp */,
+				F25676E2225592F5000985EE /* innerproduct_pack4to1.comp */,
+				F25676E3225592F5000985EE /* priorbox.comp */,
+				F25676E4225592F5000985EE /* shufflechannel_pack4.comp */,
+				F25676E5225592F5000985EE /* deconvolutiondepthwise_group.comp */,
+				F25676E6225592F5000985EE /* lrn_square_pad.comp */,
+				F25676E7225592F5000985EE /* convolutiondepthwise_group_pack4.comp */,
+				F25676E8225592F5000985EE /* relu.comp */,
+				F25676E9225592F5000985EE /* pooling_pack4.comp */,
+				F25676EA225592F5000985EE /* permute_pack4to1.comp */,
+				F25676EB225592F5000985EE /* unaryop_pack4.comp */,
+				F25676EC225592F5000985EE /* deconvolutiondepthwise_pack4.comp */,
+				F25676ED225592F5000985EE /* convolutiondepthwise.comp */,
+				F25676EE225592F5000985EE /* cast_fp32_to_fp16.comp */,
+				F25676EF225592F5000985EE /* binaryop.comp */,
+				F25676F0225592F5000985EE /* softmax_exp_sub_max.comp */,
+				F25676F1225592F5000985EE /* lrn_square_pad_within_channel_pack4.comp */,
+				F25676F2225592F5000985EE /* pooling_global_pack4.comp */,
+				F25676F3225592F5000985EE /* permute.comp */,
+				F25676F4225592F5000985EE /* innerproduct_pack1to4.comp */,
+				F25676F5225592F5000985EE /* flatten.comp */,
+				F25676F6225592F5000985EE /* convolution.comp */,
+				F25676F7225592F5000985EE /* unaryop.comp */,
+				F25676F8225592F5000985EE /* prelu.comp */,
+				F25676F9225592F5000985EE /* reorg_pack4.comp */,
+				F25676FA225592F5000985EE /* deconvolution_pack4to1.comp */,
+				F25676FB225592F5000985EE /* reshape_pack4to1.comp */,
+				F25676FC225592F5000985EE /* tanh_pack4.comp */,
+				F25676FD225592F5000985EE /* relu_pack4.comp */,
+				F25676FE225592F5000985EE /* binaryop_pack4.comp */,
+				F25676FF225592F5000985EE /* reorg_pack1to4.comp */,
+				F2567700225592F5000985EE /* concat_pack4to1.comp */,
+				F2567701225592F5000985EE /* softmax_div_sum_pack4.comp */,
+				F2567702225592F5000985EE /* interp_pack4.comp */,
+				F2567703225592F5000985EE /* convolutiondepthwise_pack4.comp */,
+				F2567704225592F5000985EE /* sigmoid_pack4.comp */,
+				F2567705225592F5000985EE /* innerproduct_pack4.comp */,
+				F2567706225592F5000985EE /* tanh.comp */,
+				F2567707225592F5000985EE /* pooling.comp */,
+				F2567708225592F5000985EE /* convolutiondepthwise_group.comp */,
+				F2567709225592F5000985EE /* convolution_pack4.comp */,
+				F256770A225592F5000985EE /* deconvolutiondepthwise_group_pack4to1.comp */,
+				F256770B225592F5000985EE /* convolution_pack4to1.comp */,
+				F256770C225592F5000985EE /* convolutiondepthwise_group_pack4to1.comp */,
+				F256770D225592F5000985EE /* priorbox_mxnet.comp */,
+				F256770E225592F5000985EE /* padding.comp */,
+				F256770F225592F5000985EE /* deconvolutiondepthwise_group_pack4.comp */,
+				F2567710225592F5000985EE /* prelu_pack4.comp */,
+				F2567711225592F5000985EE /* lrn_norm_within_channel_pack4.comp */,
+				F2567712225592F5000985EE /* deconvolution_pack4.comp */,
+				F2567713225592F5000985EE /* crop.comp */,
+				F2567714225592F5000985EE /* batchnorm.comp */,
+				F2567715225592F5000985EE /* cast_fp16_to_fp32.comp */,
+				F2567716225592F5000985EE /* absval.comp */,
+				F2567717225592F5000985EE /* concat_pack4.comp */,
+				F2567718225592F5000985EE /* softmax_div_sum.comp */,
+				F2567719225592F5000985EE /* crop_pack4.comp */,
+				F256771A225592F5000985EE /* packing_4to1.comp */,
+				F256771B225592F5000985EE /* padding_pack4.comp */,
+				F256771C225592F5000985EE /* shufflechannel.comp */,
+				F256771D225592F5000985EE /* flatten_pack4.comp */,
+				F256771E225592F5000985EE /* reshape.comp */,
+				F256771F225592F5000985EE /* convolution_1x1s1d1.comp */,
+				F2567720225592F5000985EE /* concat.comp */,
+				F2567721225592F5000985EE /* clip_pack4.comp */,
+				F2567722225592F5000985EE /* reshape_pack4.comp */,
+				F2567723225592F5000985EE /* eltwise_pack4.comp */,
+				F2567724225592F5000985EE /* innerproduct.comp */,
+				F2567725225592F5000985EE /* reorg.comp */,
+				F2567726225592F5000985EE /* clip.comp */,
+				F2567727225592F5000985EE /* convolutiondepthwise_group_pack1to4.comp */,
+				F2567728225592F5000985EE /* lrn_norm_across_channel_pack4.comp */,
+				F2567729225592F5000985EE /* softmax_reduce_sum_pack4.comp */,
+				F256772A225592F5000985EE /* deconvolutiondepthwise_group_pack1to4.comp */,
+				F256772B225592F5000985EE /* convolution_pack1to4.comp */,
+				F256772C225592F5000985EE /* dropout_pack4.comp */,
+				F256772D225592F5000985EE /* batchnorm_pack4.comp */,
+				F256772E225592F5000985EE /* cast_fp32_to_fp16_pack4.comp */,
+				F256772F225592F5000985EE /* deconvolutiondepthwise.comp */,
+				F2567730225592F5000985EE /* packing_1to4.comp */,
+				F2567731225592F5000985EE /* scale.comp */,
+				F2567732225592F5000985EE /* scale_pack4.comp */,
+				F2567733225592F5000985EE /* dropout.comp */,
+				F2567734225592F5000985EE /* sigmoid.comp */,
+				F2567735225592F5000985EE /* softmax_reduce_max_pack4.comp */,
+				F2567736225592F5000985EE /* softmax_reduce_max.comp */,
+				F2567737225592F5000985EE /* eltwise.comp */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		F256773E225592F5000985EE /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				F256773F225592F5000985EE /* relu_arm.cpp */,
+				F2567740225592F5000985EE /* deconvolution_arm.cpp */,
+				F2567741225592F5000985EE /* convolution_7x7_int8.h */,
+				F2567742225592F5000985EE /* convolution_arm.cpp */,
+				F2567743225592F5000985EE /* dequantize_arm.cpp */,
+				F2567744225592F5000985EE /* lrn_arm.h */,
+				F2567745225592F5000985EE /* convolution_1x1.h */,
+				F2567746225592F5000985EE /* convolutiondepthwise_arm.h */,
+				F2567747225592F5000985EE /* batchnorm_arm.cpp */,
+				F2567748225592F5000985EE /* convolutiondepthwise_arm.cpp */,
+				F2567749225592F5000985EE /* innerproduct_arm.h */,
+				F256774A225592F5000985EE /* dequantize_arm.h */,
+				F256774B225592F5000985EE /* bias_arm.h */,
+				F256774C225592F5000985EE /* convolution_1x1_int8.h */,
+				F256774D225592F5000985EE /* convolution_5x5.h */,
+				F256774E225592F5000985EE /* softmax_arm.h */,
+				F256774F225592F5000985EE /* softmax_arm.cpp */,
+				F2567750225592F5000985EE /* convolution_2x2.h */,
+				F2567751225592F5000985EE /* convolutiondepthwise_3x3.h */,
+				F2567752225592F5000985EE /* quantize_arm.h */,
+				F2567753225592F5000985EE /* quantize_arm.cpp */,
+				F2567754225592F5000985EE /* convolutiondepthwise_3x3_int8.h */,
+				F2567755225592F5000985EE /* pooling_2x2.h */,
+				F2567756225592F5000985EE /* interp_arm.cpp */,
+				F2567757225592F5000985EE /* eltwise_arm.cpp */,
+				F2567758225592F5000985EE /* lrn_arm.cpp */,
+				F2567759225592F5000985EE /* bias_arm.cpp */,
+				F256775A225592F5000985EE /* sigmoid_arm.h */,
+				F256775B225592F5000985EE /* requantize_arm.cpp */,
+				F256775C225592F5000985EE /* innerproduct_arm.cpp */,
+				F256775D225592F6000985EE /* convolution_5x5_int8.h */,
+				F256775E225592F6000985EE /* convolution_3x3.h */,
+				F256775F225592F6000985EE /* deconvolution_4x4.h */,
+				F2567760225592F6000985EE /* relu_arm.h */,
+				F2567761225592F6000985EE /* eltwise_arm.h */,
+				F2567762225592F6000985EE /* requantize_arm.h */,
+				F2567763225592F6000985EE /* batchnorm_arm.h */,
+				F2567764225592F6000985EE /* convolution_7x7.h */,
+				F2567765225592F6000985EE /* neon_mathfun.h */,
+				F2567766225592F6000985EE /* prelu_arm.cpp */,
+				F2567767225592F6000985EE /* pooling_3x3.h */,
+				F2567768225592F6000985EE /* convolution_3x3_int8.h */,
+				F2567769225592F6000985EE /* deconvolution_arm.h */,
+				F256776A225592F6000985EE /* scale_arm.h */,
+				F256776B225592F6000985EE /* clip_arm.cpp */,
+				F256776C225592F6000985EE /* deconvolutiondepthwise_arm.h */,
+				F256776D225592F6000985EE /* prelu_arm.h */,
+				F256776E225592F6000985EE /* convolution_arm.h */,
+				F256776F225592F6000985EE /* convolution_sgemm_int8.h */,
+				F2567770225592F6000985EE /* scale_arm.cpp */,
+				F2567771225592F6000985EE /* absval_arm.cpp */,
+				F2567772225592F6000985EE /* sigmoid_arm.cpp */,
+				F2567773225592F6000985EE /* interp_arm.h */,
+				F2567774225592F6000985EE /* pooling_arm.cpp */,
+				F2567775225592F6000985EE /* deconvolutiondepthwise_arm.cpp */,
+				F2567776225592F6000985EE /* clip_arm.h */,
+				F2567777225592F6000985EE /* deconvolution_3x3.h */,
+				F2567778225592F6000985EE /* absval_arm.h */,
+				F2567779225592F6000985EE /* convolution_4x4.h */,
+				F256777A225592F6000985EE /* pooling_arm.h */,
+				F256777B225592F6000985EE /* convolutiondepthwise_5x5.h */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		F2567884225594E3000985EE /* testSupport */ = {
+			isa = PBXGroup;
+			children = (
+				F2567885225594E3000985EE /* mouth.png */,
+				F2567886225594E3000985EE /* result_info.json */,
+				F2567887225594E3000985EE /* squeezenet_v1.1.param */,
+				F2567888225594E3000985EE /* squeezenet_v1.1.bin */,
+				F2567894225598AA000985EE /* TestSupport.h */,
+				F2567893225598AA000985EE /* TestSupport.mm */,
+			);
+			name = testSupport;
+			path = ../testSupport;
+			sourceTree = "<group>";
+		};
+		F256788D22559623000985EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F256788E22559623000985EE /* MoltenVK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F256762D225592D7000985EE /* NcnnSrcDemo_MoltenVK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2567644225592D8000985EE /* Build configuration list for PBXNativeTarget "NcnnSrcDemo_MoltenVK" */;
+			buildPhases = (
+				F256762A225592D7000985EE /* Sources */,
+				F256762B225592D7000985EE /* Frameworks */,
+				F256762C225592D7000985EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NcnnSrcDemo_MoltenVK;
+			productName = NcnnSrcDemo_MoltenVK;
+			productReference = F256762E225592D7000985EE /* NcnnSrcDemo_MoltenVK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2567626225592D7000985EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					F256762D225592D7000985EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F2567629225592D7000985EE /* Build configuration list for PBXProject "NcnnSrcDemo_MoltenVK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2567625225592D7000985EE;
+			productRefGroup = F256762F225592D7000985EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F256762D225592D7000985EE /* NcnnSrcDemo_MoltenVK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F256762C225592D7000985EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F256781E225592F6000985EE /* padding.comp in Resources */,
+				F256782E225592F6000985EE /* reshape.comp in Resources */,
+				F25677EB225592F6000985EE /* reshape_pack1to4.comp in Resources */,
+				F2567821225592F6000985EE /* lrn_norm_within_channel_pack4.comp in Resources */,
+				F2567800225592F6000985EE /* softmax_exp_sub_max.comp in Resources */,
+				F25677A3225592F6000985EE /* layer_shader_registry.h.in in Resources */,
+				F256782B225592F6000985EE /* padding_pack4.comp in Resources */,
+				F256783A225592F6000985EE /* deconvolutiondepthwise_group_pack1to4.comp in Resources */,
+				F2567831225592F6000985EE /* clip_pack4.comp in Resources */,
+				F2567838225592F6000985EE /* lrn_norm_across_channel_pack4.comp in Resources */,
+				F2567839225592F6000985EE /* softmax_reduce_sum_pack4.comp in Resources */,
+				F2567847225592F6000985EE /* eltwise.comp in Resources */,
+				F256763E225592D8000985EE /* LaunchScreen.storyboard in Resources */,
+				F25677ED225592F6000985EE /* deconvolution_pack1to4.comp in Resources */,
+				F25677A5225592F6000985EE /* CMakeLists.txt in Resources */,
+				F256783F225592F6000985EE /* deconvolutiondepthwise.comp in Resources */,
+				F256783E225592F6000985EE /* cast_fp32_to_fp16_pack4.comp in Resources */,
+				F25677F7225592F6000985EE /* convolutiondepthwise_group_pack4.comp in Resources */,
+				F2567810225592F6000985EE /* concat_pack4to1.comp in Resources */,
+				F256780F225592F6000985EE /* reorg_pack1to4.comp in Resources */,
+				F256788C225594E4000985EE /* squeezenet_v1.1.bin in Resources */,
+				F2567816225592F6000985EE /* tanh.comp in Resources */,
+				F256786D225592F6000985EE /* layer_declaration.h.in in Resources */,
+				F256781D225592F6000985EE /* priorbox_mxnet.comp in Resources */,
+				F2567845225592F6000985EE /* softmax_reduce_max_pack4.comp in Resources */,
+				F2567808225592F6000985EE /* prelu.comp in Resources */,
+				F25677F5225592F6000985EE /* deconvolutiondepthwise_group.comp in Resources */,
+				F25677E7225592F6000985EE /* softmax_exp_sub_max_pack4.comp in Resources */,
+				F2567818225592F6000985EE /* convolutiondepthwise_group.comp in Resources */,
+				F25677FF225592F6000985EE /* binaryop.comp in Resources */,
+				F2567889225594E4000985EE /* mouth.png in Resources */,
+				F2567807225592F6000985EE /* unaryop.comp in Resources */,
+				F25677EC225592F6000985EE /* absval_pack4.comp in Resources */,
+				F2567833225592F6000985EE /* eltwise_pack4.comp in Resources */,
+				F2567801225592F6000985EE /* lrn_square_pad_within_channel_pack4.comp in Resources */,
+				F25677F6225592F6000985EE /* lrn_square_pad.comp in Resources */,
+				F2567832225592F6000985EE /* reshape_pack4.comp in Resources */,
+				F2567830225592F6000985EE /* concat.comp in Resources */,
+				F25677E9225592F6000985EE /* cast_fp16_to_fp32_pack4.comp in Resources */,
+				F25677EF225592F6000985EE /* softmax_reduce_sum.comp in Resources */,
+				F2567836225592F6000985EE /* clip.comp in Resources */,
+				F256783B225592F6000985EE /* convolution_pack1to4.comp in Resources */,
+				F256780C225592F6000985EE /* tanh_pack4.comp in Resources */,
+				F2567829225592F6000985EE /* crop_pack4.comp in Resources */,
+				F256782A225592F6000985EE /* packing_4to1.comp in Resources */,
+				F25677F0225592F6000985EE /* lrn_norm.comp in Resources */,
+				F25677EE225592F6000985EE /* deconvolution.comp in Resources */,
+				F256781F225592F6000985EE /* deconvolutiondepthwise_group_pack4.comp in Resources */,
+				F2567842225592F6000985EE /* scale_pack4.comp in Resources */,
+				F2567813225592F6000985EE /* convolutiondepthwise_pack4.comp in Resources */,
+				F2567837225592F6000985EE /* convolutiondepthwise_group_pack1to4.comp in Resources */,
+				F2567812225592F6000985EE /* interp_pack4.comp in Resources */,
+				F2567823225592F6000985EE /* crop.comp in Resources */,
+				F256788A225594E4000985EE /* result_info.json in Resources */,
+				F2567834225592F6000985EE /* innerproduct.comp in Resources */,
+				F25677AD225592F6000985EE /* layer_registry.h.in in Resources */,
+				F2567843225592F6000985EE /* dropout.comp in Resources */,
+				F2567814225592F6000985EE /* sigmoid_pack4.comp in Resources */,
+				F2567826225592F6000985EE /* absval.comp in Resources */,
+				F2567822225592F6000985EE /* deconvolution_pack4.comp in Resources */,
+				F2567840225592F6000985EE /* packing_1to4.comp in Resources */,
+				F2567817225592F6000985EE /* pooling.comp in Resources */,
+				F25677E8225592F6000985EE /* lrn_square_pad_across_channel_pack4.comp in Resources */,
+				F256780E225592F6000985EE /* binaryop_pack4.comp in Resources */,
+				F256782F225592F6000985EE /* convolution_1x1s1d1.comp in Resources */,
+				F2567844225592F6000985EE /* sigmoid.comp in Resources */,
+				F256782D225592F6000985EE /* flatten_pack4.comp in Resources */,
+				F256781A225592F6000985EE /* deconvolutiondepthwise_group_pack4to1.comp in Resources */,
+				F256763B225592D8000985EE /* Assets.xcassets in Resources */,
+				F256781B225592F6000985EE /* convolution_pack4to1.comp in Resources */,
+				F2567805225592F6000985EE /* flatten.comp in Resources */,
+				F256780A225592F6000985EE /* deconvolution_pack4to1.comp in Resources */,
+				F256783C225592F6000985EE /* dropout_pack4.comp in Resources */,
+				F2567806225592F6000985EE /* convolution.comp in Resources */,
+				F2567802225592F6000985EE /* pooling_global_pack4.comp in Resources */,
+				F256786F225592F6000985EE /* layer_shader_spv_data.h.in in Resources */,
+				F256782C225592F6000985EE /* shufflechannel.comp in Resources */,
+				F2567820225592F6000985EE /* prelu_pack4.comp in Resources */,
+				F2567841225592F6000985EE /* scale.comp in Resources */,
+				F2567819225592F6000985EE /* convolution_pack4.comp in Resources */,
+				F2567815225592F6000985EE /* innerproduct_pack4.comp in Resources */,
+				F256781C225592F6000985EE /* convolutiondepthwise_group_pack4to1.comp in Resources */,
+				F25677F2225592F6000985EE /* innerproduct_pack4to1.comp in Resources */,
+				F2567803225592F6000985EE /* permute.comp in Resources */,
+				F256780D225592F6000985EE /* relu_pack4.comp in Resources */,
+				F25677FA225592F6000985EE /* permute_pack4to1.comp in Resources */,
+				F25677FB225592F6000985EE /* unaryop_pack4.comp in Resources */,
+				F256783D225592F6000985EE /* batchnorm_pack4.comp in Resources */,
+				F2567846225592F6000985EE /* softmax_reduce_max.comp in Resources */,
+				F256788B225594E4000985EE /* squeezenet_v1.1.param in Resources */,
+				F2567835225592F6000985EE /* reorg.comp in Resources */,
+				F25677FC225592F6000985EE /* deconvolutiondepthwise_pack4.comp in Resources */,
+				F25677A6225592F6000985EE /* platform.h.in in Resources */,
+				F25677FE225592F6000985EE /* cast_fp32_to_fp16.comp in Resources */,
+				F25677F4225592F6000985EE /* shufflechannel_pack4.comp in Resources */,
+				F2567825225592F6000985EE /* cast_fp16_to_fp32.comp in Resources */,
+				F25677F8225592F6000985EE /* relu.comp in Resources */,
+				F2567804225592F6000985EE /* innerproduct_pack1to4.comp in Resources */,
+				F2567828225592F6000985EE /* softmax_div_sum.comp in Resources */,
+				F25677A4225592F6000985EE /* layer_type_enum.h.in in Resources */,
+				F25677F1225592F6000985EE /* pooling_global.comp in Resources */,
+				F2567827225592F6000985EE /* concat_pack4.comp in Resources */,
+				F256780B225592F6000985EE /* reshape_pack4to1.comp in Resources */,
+				F25677FD225592F6000985EE /* convolutiondepthwise.comp in Resources */,
+				F25677EA225592F6000985EE /* interp.comp in Resources */,
+				F2567639225592D7000985EE /* Main.storyboard in Resources */,
+				F2567824225592F6000985EE /* batchnorm.comp in Resources */,
+				F25677F3225592F6000985EE /* priorbox.comp in Resources */,
+				F2567809225592F6000985EE /* reorg_pack4.comp in Resources */,
+				F25677F9225592F6000985EE /* pooling_pack4.comp in Resources */,
+				F2567811225592F6000985EE /* softmax_div_sum_pack4.comp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F256762A225592D7000985EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2567870225592F6000985EE /* opencv.cpp in Sources */,
+				F25677C5225592F6000985EE /* permute.cpp in Sources */,
+				F25677CE225592F6000985EE /* proposal.cpp in Sources */,
+				F25677B5225592F6000985EE /* log.cpp in Sources */,
+				F25677C4225592F6000985EE /* reduction.cpp in Sources */,
+				F25677C3225592F6000985EE /* roipooling.cpp in Sources */,
+				F25677CF225592F6000985EE /* eltwise.cpp in Sources */,
+				F2567866225592F6000985EE /* roialign.cpp in Sources */,
+				F25677DC225592F6000985EE /* mvn.cpp in Sources */,
+				F256785C225592F6000985EE /* absval_arm.cpp in Sources */,
+				F256786B225592F6000985EE /* mat_pixel.cpp in Sources */,
+				F25677E5225592F6000985EE /* threshold.cpp in Sources */,
+				F25677BD225592F6000985EE /* deconvolutiondepthwise.cpp in Sources */,
+				F25677BE225592F6000985EE /* tanh.cpp in Sources */,
+				F2567869225592F6000985EE /* mat.cpp in Sources */,
+				F256784F225592F6000985EE /* batchnorm_arm.cpp in Sources */,
+				F2567865225592F6000985EE /* convolution.cpp in Sources */,
+				F25677D1225592F6000985EE /* pooling.cpp in Sources */,
+				F256785E225592F6000985EE /* pooling_arm.cpp in Sources */,
+				F25677D5225592F6000985EE /* concat.cpp in Sources */,
+				F2567857225592F6000985EE /* requantize_arm.cpp in Sources */,
+				F25677E2225592F6000985EE /* clip.cpp in Sources */,
+				F25677AB225592F6000985EE /* pipeline.cpp in Sources */,
+				F2567636225592D7000985EE /* ViewController.mm in Sources */,
+				F25677DE225592F6000985EE /* convolutiondepthwise_x86.cpp in Sources */,
+				F2567871225592F6000985EE /* paramdict.cpp in Sources */,
+				F2567864225592F6000985EE /* absval.cpp in Sources */,
+				F25677C1225592F6000985EE /* matmul.cpp in Sources */,
+				F25677DD225592F6000985EE /* priorbox.cpp in Sources */,
+				F25677AF225592F6000985EE /* squeeze.cpp in Sources */,
+				F25677CD225592F6000985EE /* instancenorm.cpp in Sources */,
+				F25677E3225592F6000985EE /* padding.cpp in Sources */,
+				F25677CB225592F6000985EE /* slice.cpp in Sources */,
+				F2567895225598AA000985EE /* TestSupport.mm in Sources */,
+				F2567853225592F6000985EE /* interp_arm.cpp in Sources */,
+				F25677E6225592F6000985EE /* quantize.cpp in Sources */,
+				F25677C8225592F6000985EE /* exp.cpp in Sources */,
+				F25677A2225592F6000985EE /* mat_pixel_resize.cpp in Sources */,
+				F25677E0225592F6000985EE /* innerproduct.cpp in Sources */,
+				F2567858225592F6000985EE /* innerproduct_arm.cpp in Sources */,
+				F25677CC225592F6000985EE /* lrn.cpp in Sources */,
+				F2567862225592F6000985EE /* binaryop.cpp in Sources */,
+				F25677A9225592F6000985EE /* benchmark.cpp in Sources */,
+				F25677E4225592F6000985EE /* requantize.cpp in Sources */,
+				F256785B225592F6000985EE /* scale_arm.cpp in Sources */,
+				F2567851225592F6000985EE /* softmax_arm.cpp in Sources */,
+				F25677C9225592F6000985EE /* relu.cpp in Sources */,
+				F25677AA225592F6000985EE /* command.cpp in Sources */,
+				F25677DF225592F6000985EE /* convolution_x86.cpp in Sources */,
+				F256785D225592F6000985EE /* sigmoid_arm.cpp in Sources */,
+				F25677B1225592F6000985EE /* batchnorm.cpp in Sources */,
+				F25677B4225592F6000985EE /* dequantize.cpp in Sources */,
+				F25677C2225592F6000985EE /* reorg.cpp in Sources */,
+				F2567863225592F6000985EE /* unaryop.cpp in Sources */,
+				F25677E1225592F6000985EE /* softmax.cpp in Sources */,
+				F25677D0225592F6000985EE /* prelu.cpp in Sources */,
+				F25677C0225592F6000985EE /* split.cpp in Sources */,
+				F25677AE225592F6000985EE /* flatten.cpp in Sources */,
+				F2567859225592F6000985EE /* prelu_arm.cpp in Sources */,
+				F25677BF225592F6000985EE /* expanddims.cpp in Sources */,
+				F2567856225592F6000985EE /* bias_arm.cpp in Sources */,
+				F25677D9225592F6000985EE /* crop.cpp in Sources */,
+				F25677B7225592F6000985EE /* memorydata.cpp in Sources */,
+				F25677B6225592F6000985EE /* detectionoutput.cpp in Sources */,
+				F2567852225592F6000985EE /* quantize_arm.cpp in Sources */,
+				F2567861225592F6000985EE /* scale.cpp in Sources */,
+				F2567641225592D8000985EE /* main.m in Sources */,
+				F256786C225592F6000985EE /* cpu.cpp in Sources */,
+				F25677B3225592F6000985EE /* shufflechannel.cpp in Sources */,
+				F25677B8225592F6000985EE /* input.cpp in Sources */,
+				F25677A7225592F6000985EE /* blob.cpp in Sources */,
+				F2567849225592F6000985EE /* tile.cpp in Sources */,
+				F25677B9225592F6000985EE /* reshape.cpp in Sources */,
+				F2567868225592F6000985EE /* allocator.cpp in Sources */,
+				F25677AC225592F6000985EE /* net.cpp in Sources */,
+				F256785F225592F6000985EE /* deconvolutiondepthwise_arm.cpp in Sources */,
+				F2567867225592F6000985EE /* yolodetectionoutput.cpp in Sources */,
+				F256784D225592F6000985EE /* convolution_arm.cpp in Sources */,
+				F25677D6225592F6000985EE /* packing.cpp in Sources */,
+				F25677D7225592F6000985EE /* convolutiondepthwise.cpp in Sources */,
+				F25677BA225592F6000985EE /* sigmoid.cpp in Sources */,
+				F256784B225592F6000985EE /* relu_arm.cpp in Sources */,
+				F25677C6225592F6000985EE /* bnll.cpp in Sources */,
+				F25677BC225592F6000985EE /* interp.cpp in Sources */,
+				F25677C7225592F6000985EE /* elu.cpp in Sources */,
+				F25677D2225592F6000985EE /* spp.cpp in Sources */,
+				F2567860225592F6000985EE /* bias.cpp in Sources */,
+				F25677D3225592F6000985EE /* lstm.cpp in Sources */,
+				F256785A225592F6000985EE /* clip_arm.cpp in Sources */,
+				F256784E225592F6000985EE /* dequantize_arm.cpp in Sources */,
+				F256786E225592F6000985EE /* gpu.cpp in Sources */,
+				F256784A225592F6000985EE /* cast.cpp in Sources */,
+				F25677BB225592F6000985EE /* deconvolution.cpp in Sources */,
+				F25677D4225592F6000985EE /* normalize.cpp in Sources */,
+				F2567850225592F6000985EE /* convolutiondepthwise_arm.cpp in Sources */,
+				F2567855225592F6000985EE /* lrn_arm.cpp in Sources */,
+				F25677B2225592F6000985EE /* argmax.cpp in Sources */,
+				F25677DA225592F6000985EE /* psroipooling.cpp in Sources */,
+				F25677D8225592F6000985EE /* rnn.cpp in Sources */,
+				F25677CA225592F6000985EE /* embed.cpp in Sources */,
+				F2567633225592D7000985EE /* AppDelegate.m in Sources */,
+				F25677A8225592F6000985EE /* layer.cpp in Sources */,
+				F25677B0225592F6000985EE /* dropout.cpp in Sources */,
+				F2567854225592F6000985EE /* eltwise_arm.cpp in Sources */,
+				F2567848225592F6000985EE /* yolov3detectionoutput.cpp in Sources */,
+				F256784C225592F6000985EE /* deconvolution_arm.cpp in Sources */,
+				F25677DB225592F6000985EE /* power.cpp in Sources */,
+				F256786A225592F6000985EE /* modelbin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2567637225592D7000985EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2567638225592D7000985EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F256763C225592D8000985EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F256763D225592D8000985EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2567642225592D8000985EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2567643225592D8000985EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2567645225592D8000985EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../MoltenVK/iOS/framework";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NSD_SOURCE,
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/build_headers",
+					"$(PROJECT_DIR)/../MoltenVK/include",
+				);
+				INFOPLIST_FILE = NcnnSrcDemo_MoltenVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.NcnnSrcDemo-MoltenVK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2567646225592D8000985EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../MoltenVK/iOS/framework";
+				GCC_PREPROCESSOR_DEFINITIONS = NSD_SOURCE;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/build_headers",
+					"$(PROJECT_DIR)/../MoltenVK/include",
+				);
+				INFOPLIST_FILE = NcnnSrcDemo_MoltenVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.NcnnSrcDemo-MoltenVK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2567629225592D7000985EE /* Build configuration list for PBXProject "NcnnSrcDemo_MoltenVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2567642225592D8000985EE /* Debug */,
+				F2567643225592D8000985EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2567644225592D8000985EE /* Build configuration list for PBXNativeTarget "NcnnSrcDemo_MoltenVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2567645225592D8000985EE /* Debug */,
+				F2567646225592D8000985EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2567626225592D7000985EE /* Project object */;
+}

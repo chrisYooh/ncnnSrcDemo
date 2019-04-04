@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F25678A422559C90000985EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25678A322559C90000985EE /* AppDelegate.m */; };
+		F25678A722559C90000985EE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25678A622559C90000985EE /* ViewController.mm */; };
+		F25678AA22559C90000985EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25678A822559C90000985EE /* Main.storyboard */; };
+		F25678AC22559C91000985EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25678AB22559C91000985EE /* Assets.xcassets */; };
+		F25678AF22559C91000985EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25678AD22559C91000985EE /* LaunchScreen.storyboard */; };
+		F25678B222559C91000985EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25678B122559C91000985EE /* main.m */; };
+		F25678BF22559CDB000985EE /* mouth.png in Resources */ = {isa = PBXBuildFile; fileRef = F25678B922559CDB000985EE /* mouth.png */; };
+		F25678C022559CDB000985EE /* result_info.json in Resources */ = {isa = PBXBuildFile; fileRef = F25678BB22559CDB000985EE /* result_info.json */; };
+		F25678C122559CDB000985EE /* TestSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25678BC22559CDB000985EE /* TestSupport.mm */; };
+		F25678C222559CDB000985EE /* squeezenet_v1.1.param in Resources */ = {isa = PBXBuildFile; fileRef = F25678BD22559CDB000985EE /* squeezenet_v1.1.param */; };
+		F25678C322559CDB000985EE /* squeezenet_v1.1.bin in Resources */ = {isa = PBXBuildFile; fileRef = F25678BE22559CDB000985EE /* squeezenet_v1.1.bin */; };
+		F25678C622559E54000985EE /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25678C522559E54000985EE /* ncnn.framework */; };
+		F25678C822559E5C000985EE /* MoltenVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25678C722559E5C000985EE /* MoltenVK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F256789F22559C90000985EE /* NcnnFrmDemo_MoltenVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcnnFrmDemo_MoltenVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25678A222559C90000985EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F25678A322559C90000985EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F25678A522559C90000985EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F25678A622559C90000985EE /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F25678A922559C90000985EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F25678AB22559C91000985EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25678AE22559C91000985EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F25678B022559C91000985EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25678B122559C91000985EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25678B922559CDB000985EE /* mouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouth.png; sourceTree = "<group>"; };
+		F25678BA22559CDB000985EE /* TestSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSupport.h; sourceTree = "<group>"; };
+		F25678BB22559CDB000985EE /* result_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = result_info.json; sourceTree = "<group>"; };
+		F25678BC22559CDB000985EE /* TestSupport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSupport.mm; sourceTree = "<group>"; };
+		F25678BD22559CDB000985EE /* squeezenet_v1.1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squeezenet_v1.1.param; sourceTree = "<group>"; };
+		F25678BE22559CDB000985EE /* squeezenet_v1.1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = squeezenet_v1.1.bin; sourceTree = "<group>"; };
+		F25678C522559E54000985EE /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
+		F25678C722559E5C000985EE /* MoltenVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MoltenVK.framework; path = ../MoltenVK/iOS/framework/MoltenVK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F256789C22559C90000985EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25678C822559E5C000985EE /* MoltenVK.framework in Frameworks */,
+				F25678C622559E54000985EE /* ncnn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F256789622559C90000985EE = {
+			isa = PBXGroup;
+			children = (
+				F25678B822559CDB000985EE /* testSupport */,
+				F25678A122559C90000985EE /* NcnnFrmDemo_MoltenVK */,
+				F25678A022559C90000985EE /* Products */,
+				F25678C422559E53000985EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F25678A022559C90000985EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F256789F22559C90000985EE /* NcnnFrmDemo_MoltenVK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25678A122559C90000985EE /* NcnnFrmDemo_MoltenVK */ = {
+			isa = PBXGroup;
+			children = (
+				F25678A222559C90000985EE /* AppDelegate.h */,
+				F25678A322559C90000985EE /* AppDelegate.m */,
+				F25678A522559C90000985EE /* ViewController.h */,
+				F25678A622559C90000985EE /* ViewController.mm */,
+				F25678A822559C90000985EE /* Main.storyboard */,
+				F25678AB22559C91000985EE /* Assets.xcassets */,
+				F25678AD22559C91000985EE /* LaunchScreen.storyboard */,
+				F25678B022559C91000985EE /* Info.plist */,
+				F25678B122559C91000985EE /* main.m */,
+			);
+			path = NcnnFrmDemo_MoltenVK;
+			sourceTree = "<group>";
+		};
+		F25678B822559CDB000985EE /* testSupport */ = {
+			isa = PBXGroup;
+			children = (
+				F25678B922559CDB000985EE /* mouth.png */,
+				F25678BA22559CDB000985EE /* TestSupport.h */,
+				F25678BB22559CDB000985EE /* result_info.json */,
+				F25678BC22559CDB000985EE /* TestSupport.mm */,
+				F25678BD22559CDB000985EE /* squeezenet_v1.1.param */,
+				F25678BE22559CDB000985EE /* squeezenet_v1.1.bin */,
+			);
+			name = testSupport;
+			path = ../testSupport;
+			sourceTree = "<group>";
+		};
+		F25678C422559E53000985EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F25678C722559E5C000985EE /* MoltenVK.framework */,
+				F25678C522559E54000985EE /* ncnn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F256789E22559C90000985EE /* NcnnFrmDemo_MoltenVK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25678B522559C91000985EE /* Build configuration list for PBXNativeTarget "NcnnFrmDemo_MoltenVK" */;
+			buildPhases = (
+				F256789B22559C90000985EE /* Sources */,
+				F256789C22559C90000985EE /* Frameworks */,
+				F256789D22559C90000985EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NcnnFrmDemo_MoltenVK;
+			productName = NcnnFrmDemo_MoltenVK;
+			productReference = F256789F22559C90000985EE /* NcnnFrmDemo_MoltenVK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F256789722559C90000985EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					F256789E22559C90000985EE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = F256789A22559C90000985EE /* Build configuration list for PBXProject "NcnnFrmDemo_MoltenVK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F256789622559C90000985EE;
+			productRefGroup = F25678A022559C90000985EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F256789E22559C90000985EE /* NcnnFrmDemo_MoltenVK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F256789D22559C90000985EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25678AF22559C91000985EE /* LaunchScreen.storyboard in Resources */,
+				F25678C322559CDB000985EE /* squeezenet_v1.1.bin in Resources */,
+				F25678BF22559CDB000985EE /* mouth.png in Resources */,
+				F25678C222559CDB000985EE /* squeezenet_v1.1.param in Resources */,
+				F25678C022559CDB000985EE /* result_info.json in Resources */,
+				F25678AC22559C91000985EE /* Assets.xcassets in Resources */,
+				F25678AA22559C90000985EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F256789B22559C90000985EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25678A722559C90000985EE /* ViewController.mm in Sources */,
+				F25678B222559C91000985EE /* main.m in Sources */,
+				F25678A422559C90000985EE /* AppDelegate.m in Sources */,
+				F25678C122559CDB000985EE /* TestSupport.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F25678A822559C90000985EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25678A922559C90000985EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F25678AD22559C91000985EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25678AE22559C91000985EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25678B322559C91000985EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F25678B422559C91000985EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25678B622559C91000985EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../MoltenVK/iOS/framework",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../MoltenVK/include";
+				INFOPLIST_FILE = NcnnFrmDemo_MoltenVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.NcnnFrmDemo-MoltenVK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F25678B722559C91000985EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67KFM65GB3;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../MoltenVK/iOS/framework",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../MoltenVK/include";
+				INFOPLIST_FILE = NcnnFrmDemo_MoltenVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Chris.NcnnFrmDemo-MoltenVK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F256789A22559C90000985EE /* Build configuration list for PBXProject "NcnnFrmDemo_MoltenVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25678B322559C91000985EE /* Debug */,
+				F25678B422559C91000985EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25678B522559C91000985EE /* Build configuration list for PBXNativeTarget "NcnnFrmDemo_MoltenVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25678B622559C91000985EE /* Debug */,
+				F25678B722559C91000985EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F256789722559C90000985EE /* Project object */;
+}
