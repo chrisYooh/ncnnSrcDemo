@@ -12,6 +12,7 @@
 		F25678D222559EF7000985EE /* TestSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25678CD22559EF7000985EE /* TestSupport.mm */; };
 		F25678D322559EF7000985EE /* squeezenet_v1.1.param in Resources */ = {isa = PBXBuildFile; fileRef = F25678CE22559EF7000985EE /* squeezenet_v1.1.param */; };
 		F25678D422559EF7000985EE /* squeezenet_v1.1.bin in Resources */ = {isa = PBXBuildFile; fileRef = F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */; };
+		F29010A9225B2F280065E0D9 /* Test_LoadModelData.mm in Sources */ = {isa = PBXBuildFile; fileRef = F29010A8225B2F280065E0D9 /* Test_LoadModelData.mm */; };
 		F2CCA647224B4493008E4CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA646224B4493008E4CC9 /* AppDelegate.m */; };
 		F2CCA64A224B4493008E4CC9 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F2CCA649224B4493008E4CC9 /* ViewController.mm */; };
 		F2CCA64D224B4493008E4CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CCA64B224B4493008E4CC9 /* Main.storyboard */; };
@@ -170,6 +171,8 @@
 		F25678CD22559EF7000985EE /* TestSupport.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestSupport.mm; sourceTree = "<group>"; };
 		F25678CE22559EF7000985EE /* squeezenet_v1.1.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squeezenet_v1.1.param; sourceTree = "<group>"; };
 		F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = squeezenet_v1.1.bin; sourceTree = "<group>"; };
+		F29010A8225B2F280065E0D9 /* Test_LoadModelData.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Test_LoadModelData.mm; sourceTree = "<group>"; };
+		F29010AA225B2F380065E0D9 /* Test_LoadModelData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test_LoadModelData.h; sourceTree = "<group>"; };
 		F2CCA642224B4493008E4CC9 /* NcnnSrcDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NcnnSrcDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2CCA645224B4493008E4CC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2CCA646224B4493008E4CC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -467,12 +470,14 @@
 		F25678C922559EF7000985EE /* testSupport */ = {
 			isa = PBXGroup;
 			children = (
-				F25678CA22559EF7000985EE /* mouth.png */,
 				F25678CB22559EF7000985EE /* TestSupport.h */,
-				F25678CC22559EF7000985EE /* result_info.json */,
 				F25678CD22559EF7000985EE /* TestSupport.mm */,
+				F25678CA22559EF7000985EE /* mouth.png */,
+				F25678CC22559EF7000985EE /* result_info.json */,
 				F25678CE22559EF7000985EE /* squeezenet_v1.1.param */,
 				F25678CF22559EF7000985EE /* squeezenet_v1.1.bin */,
+				F29010AA225B2F380065E0D9 /* Test_LoadModelData.h */,
+				F29010A8225B2F280065E0D9 /* Test_LoadModelData.mm */,
 			);
 			name = testSupport;
 			path = ../testSupport;
@@ -953,6 +958,7 @@
 				F2CCA7F1224B45B9008E4CC9 /* convolution.cpp in Sources */,
 				F2CCA79E224B45B9008E4CC9 /* pooling.cpp in Sources */,
 				F2CCA7D9224B45B9008E4CC9 /* relu_arm.cpp in Sources */,
+				F29010A9225B2F280065E0D9 /* Test_LoadModelData.mm in Sources */,
 				F2CCA7A2224B45B9008E4CC9 /* concat.cpp in Sources */,
 				F2CCA7AF224B45B9008E4CC9 /* clip.cpp in Sources */,
 				F2CCA7ED224B45B9008E4CC9 /* scale.cpp in Sources */,

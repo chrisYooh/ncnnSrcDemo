@@ -9,6 +9,7 @@
 #import "net.h"
 #import "mat.h"
 #import "TestSupport.h"
+#import "Test_LoadModelData.h"
 
 #import "ViewController.h"
 
@@ -25,6 +26,14 @@
     
     [self loadModel];
     [self detect];
+
+    /* 自定义 bin 文件加载测试 */
+//    [self loadModel_myAnalysis];
+}
+    
+- (void)loadModel_myAnalysis {
+    NSString *binPath = [[NSBundle mainBundle] pathForResource:@"squeezenet_v1.1" ofType:@"bin"];
+    ts_loadBinFile(binPath);
 }
 
 - (void)loadModel {
